@@ -1,9 +1,9 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кристина Гришина](https://up.htmlacademy.ru/adaptive/15/user/624185).
-* Наставник: [Ольга Вадясова!!!](https://htmlacademy.ru/profile/ad0v0)
+* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad0v0)
 
----
+--- 
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
