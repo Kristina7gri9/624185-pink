@@ -11,24 +11,21 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <a class="main-nav__list menu-list">
-        <img class="main-nav__list-image" src="img/menu-burger.svg" width="50" height="24" alt="меню"></a>
-      <a class="main-nav__list close-list">
+        <img class="main-nav__list-image" src="img/menu-burger.svg" width="50" height="24" alt="меню">
         <img class="main-nav__list close-list-image" src="img/close.svg" width="54" height="23" alt="Крестик">
-      </a>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list ">
           <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="#">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a aria-label="страница конкурсов" href="#">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a aria-label="страница академии" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -51,29 +48,32 @@
           </li>
         </ul>
       </div>
-      <p class="download__reach">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Преимущества приложения</h2>
-        <b class="advantages__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</b>
+        <p class="advantages__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение
+            <h3 class="advantages__title">
+              Поднимает настроение
             </h3>
             <p class="advantages__description">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг
+            <h3 class="advantages__title">
+              Меняет мир вокруг
             </h3>
             <p class="advantages__description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей
+            <h3 class="advantages__title">
+              Заводит новых друзей
             </h3>
             <p class="advantages__description">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -85,7 +85,7 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__list slider__list">
+      <div class="reviews__list slider">
         <blockquote class="reviews__item slider__item">
           <cite class="reviews__author-name">
             Николай Петров
