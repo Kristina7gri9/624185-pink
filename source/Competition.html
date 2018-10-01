@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Конкурс: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <img class="main-nav__list-image" src="img/menu-burger.svg" width="50" height="24" alt="меню">
+        <img class="main-nav__list close-list-image" src="img/close.svg" width="54" height="23" alt="Крестик">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list ">
+          <li class="site-list__item ">
+            <a aria-label="главная страница" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a aria-label="страница фотографий" href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a aria-label="страница конкурсов">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a aria-label="страница академии" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="page-main__competition">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="history">
+        <div class="history__wrapper">
+          <p class="history__condition">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+            вашу бонусную карту! Пожалуйста, заполните </p>
+          <div class="history__information_name">
+            <label class="history__label">Фамилия: </label>
+            <input class="history__input" type="text" name="фамилия" id="surname-field" placeholder="Укажите фамилию *">
+            <label class="history__label">Имя:</label>
+            <input class="history__input" type="text" name="имя" id="name-field" placeholder="Введите ваше имя *">
+            <label class="history__label">Отчество: </label>
+            <input class="history__input" type="text" name="фамилия" id="patronymic-field" placeholder="Ну и отчество тоже">
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Ваши безбашенные
+            достижения в путешествии</h2>
+          <div class="advantages__list">
+            <label class="advantages__label">
+              <input class="advantages__input" type="checkbox" name="selfi" id="selfi-field" checked>
+              Сделал селфи с акулой
+            </label>
+            <label class="advantages__label">
+              <input class="advantages__input" type="checkbox" name="beach" id="beach-field" checked>
+              Обгорел на пляже
+            </label>
+            <label class="advantages__label">
+              <input class="advantages__input" type="checkbox" name="chack" id="chack-field">
+              Видел Чака Норриса
+            </label>
+            <label class="advantages__label">
+              <input class="advantages__input" type="checkbox" name="suvenirs" id="suvenirs-field">
+              Накупил сувениров
+            </label>
+            <label class="advantages__label">
+              <input class="advantages__input" type="checkbox" name="town" id="town-field" checked>
+              Удержал башню
+            </label>
+            <label class="advantages__label">
+              <input class="advantages__input" type="checkbox" name="hotel" id="hotel-field">
+              Разгромил отель
+            </label>
+            </div>
+        </div>
+      </section>
+      <section class="adress">
+        <div class="adress__wrapper">
+          <label class="adress__label">
+            Номер телефона
+          </label>
+          <input class="adress__input" type="tel" name="tel" id="tel-field" placeholder="Номер, пожалуйста">
+          <label class="adress__label">
+            Адрес почты
+          </label>
+          <input class="adress__input" type="text" name="login" id="login-field" placeholder="Введите почту *">
+        </div>
+      </section>
+      <section class="OP">
+        <div class="OP__wrapper">
+          <h2 class="OP__choice">
+            С каким приложением путешествовали?
+          </h2>
+            <label class="OP__label">
+            <input class="OP__input" type="radio" name="ios" checked>
+            Pink для iOS
+          </label>
+          <label class="OP__label">
+            <input class="OP__input" type="radio" name="android" checked>
+            Pink на Android
+          </label>
+          <label class="OP__label">
+            <input class="OP__input" type="radio" name="windows" checked>
+            Windows Phone
+          </label>
+        </div>
+      </section>
+      <section class="emotion">
+        <div class="emotion__wrapper">
+          <h2 class="emotion__title">Опишите свои эмоции</h2>
+          <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </div>
+      </section>
+      <input type="submit" value="Отправить форму">
+      <sup>*</sup>— обязательные поля
+    </form>
+  </main>
+  <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
+        <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Очки»">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy">Мы в твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы в ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+  </footer>
+  </body>
+  </html>
