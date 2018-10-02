@@ -11,15 +11,14 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <img class="main-nav__list-image" src="img/menu-burger.svg" width="50" height="24" alt="меню">
-        <img class="main-nav__list close-list-image" src="img/close.svg" width="54" height="23" alt="Крестик">
+      <button aria-label="Закрыть" class="maim-nav__toggle" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list ">
           <li class="site-list__item ">
-            <a aria-label="главная страница" href="#">Главная</a>
+            <a aria-label="главная страница" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a aria-label="страница фотографий" href="#">Фотографии</a>
+            <a aria-label="страница фотографий" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item site-list__item--active">
             <a aria-label="страница конкурсов">Конкурс</a>
@@ -32,93 +31,111 @@
     </nav>
   </header>
   <main class="page-main">
+    <section class="intro"> <h1 class="page-main__competition">Конкурс на самое безбашенное путешествие с Пинк</h1></section>
+     <p class="page-main__condition">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+        вашу бонусную карту! Пожалуйста, заполните </p>
     <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
-      <h1 class="page-main__competition">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <section class="history">
-        <div class="history__wrapper">
-          <p class="history__condition">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
-            вашу бонусную карту! Пожалуйста, заполните </p>
-          <div class="history__information_name">
-            <label class="history__label">Фамилия: </label>
-            <input class="history__input" type="text" name="фамилия" id="surname-field" placeholder="Укажите фамилию *">
-            <label class="history__label">Имя:</label>
-            <input class="history__input" type="text" name="имя" id="name-field" placeholder="Введите ваше имя *">
-            <label class="history__label">Отчество: </label>
-            <input class="history__input" type="text" name="фамилия" id="patronymic-field" placeholder="Ну и отчество тоже">
+      <section class="information-text">
+          <div class="information-text__surname">
+            <label class="information-text__label">Фамилия: </label>
+            <input class="information-text__input" type="text" name="фамилия" id="surname-field" placeholder="Укажите фамилию *">
+         </div>
+         <div class="information-text__name">
+            <label class="information-text__label">Имя:</label>
+            <input class="information-text__input" type="text" name="имя" id="name-field" placeholder="Введите ваше имя *">
           </div>
-        </div>
-      </section>
+          <div class="information-text__patronimic">
+            <label class="information-text__label">Отчество: </label>
+            <input class="information-text__input" type="text" name="фамилия" id="patronymic-field" placeholder="Ну и отчество тоже">
+          </div>
+
+    <!-- end .promo -->  </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Ваши безбашенные
             достижения в путешествии</h2>
           <div class="advantages__list">
             <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="selfi" id="selfi-field" checked>
+              <input class="advantages__input" type="checkbox" name="advantages" value="selfi" id="selfi-field" checked>
               Сделал селфи с акулой
             </label>
+            </div>
+            <div class="advantages__list">
             <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="beach" id="beach-field" checked>
+              <input class="advantages__input" type="checkbox" name="advantages" value="beach" id="beach-field" checked>
               Обгорел на пляже
             </label>
+          </div>
+          <div  class="advantages__list">
             <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="chack" id="chack-field">
+              <input class="advantages__input" type="checkbox" name="advantages" value="chack noris" id="chack-field">
               Видел Чака Норриса
             </label>
+            </div>
+            <div  class="advantages__list">
             <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="suvenirs" id="suvenirs-field">
+              <input class="advantages__input" type="checkbox" name="advantages" value="suvenirs" id="suvenirs-field">
               Накупил сувениров
             </label>
+            </div>
+            <div  class="advantages__list">
             <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="town" id="town-field" checked>
+              <input class="advantages__input" type="checkbox" name="advantages" value="town" id="town-field" checked>
               Удержал башню
             </label>
+            </div>
+           <div  class="advantages__list">
             <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="hotel" id="hotel-field">
+              <input class="advantages__input" type="checkbox" name="advantages" value="hotel" id="hotel-field">
               Разгромил отель
             </label>
-            </div>
+          </div>
         </div>
-      </section>
+    <!-- end .promo -->  </section>
       <section class="adress">
-        <div class="adress__wrapper">
+      <h2 class="visually-hidden">Введите Данные адреса почты и телефона</h2>
+          <div class="adress__info">
           <label class="adress__label">
             Номер телефона
           </label>
           <input class="adress__input" type="tel" name="tel" id="tel-field" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="adress__info">
           <label class="adress__label">
             Адрес почты
           </label>
           <input class="adress__input" type="text" name="login" id="login-field" placeholder="Введите почту *">
         </div>
-      </section>
-      <section class="OP">
-        <div class="OP__wrapper">
-          <h2 class="OP__choice">
-            С каким приложением путешествовали?
-          </h2>
-            <label class="OP__label">
-            <input class="OP__input" type="radio" name="ios" checked>
+    <!-- end .promo -->  </section>
+      <section class="systems">
+          <h2 class="systems__choice">С каким приложением путешествовали?</h2>
+          <div class="systems__operation">
+            <label class="systems__label">
+            <input class="systems__input" type="radio" name="operation systems" value="ios" checked>
             Pink для iOS
           </label>
-          <label class="OP__label">
-            <input class="OP__input" type="radio" name="android" checked>
+          </div>
+          <div class="systems__operation">
+          <label class="systems__label">
+            <input class="systems__input" type="radio" name="operation systems" value="android" checked>
             Pink на Android
           </label>
-          <label class="OP__label">
-            <input class="OP__input" type="radio" name="windows" checked>
+          </div>
+          <div class="systems__operation">
+          <label class="systems__label">
+            <input class="systems__input" type="radio" name="operation systems" value="windows" checked>
             Windows Phone
           </label>
-        </div>
-      </section>
+          </div>
+    <!-- end .promo -->  </section>
       <section class="emotion">
         <div class="emotion__wrapper">
           <h2 class="emotion__title">Опишите свои эмоции</h2>
           <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
-      </section>
-      <input type="submit" value="Отправить форму">
-      <sup>*</sup>— обязательные поля
+     <!-- end .promo --> </section>
+     <button aria-label="отправка формы" class="toggle" type="button">Отправить форму</button>
+      <sup>*</sup> — <p class="necessary-field">обязательные поля</p>
     </form>
   </main>
   <footer class="page-footer">
@@ -140,8 +157,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link button " href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
   </footer>
   </body>

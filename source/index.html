@@ -11,18 +11,17 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <img class="main-nav__list-image" src="img/menu-burger.svg" width="50" height="24" alt="меню">
-        <img class="main-nav__list close-list-image" src="img/close.svg" width="54" height="23" alt="Крестик">
+      <button aria-label="Закрыть" class="maim-nav__toggle" type="button">Закрыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list ">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a aria-label="страница конкурсов" href="#">Конкурс</a>
+            <a aria-label="страница конкурсов" href="Competition.html">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a aria-label="страница академии" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -32,28 +31,29 @@
     </nav>
   </header>
  <main class="page-main">
-    <h1 class="visually-hidden">Приложение Пинк</h1>
-    <section class="download">
-      <button class="download__toggle" type="button">Скачать приложение</button>
-      <div class="download__operating-system operating-system">
+  <section class="promo"><h1 class="visually-hidden">Приложение Пинк</h1></section>
+    <section class="download-app">
+      <h2 class="visually-hidden">Операционные системы, на которые доступно скачивание приложения Пинк</h2>
+      <button class="download-app__toggle" type="button">Скачать приложение</button>
+      <div class="download-app__operating-system operating-system">
         <ul class="operating-system__list">
           <li class="operating-system__item">
-            <a class="operating-system__link operating-system__link--IOS" href="#">Apple</a>
+            <a class="operating-system__link operating-system__link--ios" href="#">Apple</a>
           </li>
           <li class="operating-system__item">
             <a class="operating-system__link operating-system__link--android" href="#">Андроид</a>
           </li>
           <li class="operating-system__item">
-            <a class="operating-system__link operating-system__link--win" href="#">Windows</a>
+            <a class="operating-system__link operating-system__link--windows" href="#">Windows</a>
           </li>
         </ul>
       </div>
-      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
+      <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+   <!-- end .promo --> </section>
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Преимущества приложения</h2>
-        <p class="advantages__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <p class="advantages__text">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">
@@ -83,125 +83,116 @@
             <img class="advantages__pink-image" src="img/iphone.svg" alt="Картинка телефона"></a>
         </ul>
       </div>
-    </section>
+   <!-- end .promo --> </section>
     <section class="reviews">
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__list slider">
         <blockquote class="reviews__item slider__item">
-          <cite class="reviews__author-name">
-            Николай Петров
-          </cite>
-          <p class="reviews__text">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
         <blockquote class="reviews__item slider__item">
-          <cite class="reviews__author-name">
-            имя
-          </cite>
-          <p class="reviews__text">
-            текст
-          </p>
+          <cite class="reviews__author-name">имя</cite>
+          <p class="reviews__text">текст</p>
         </blockquote>
         <blockquote class="reviews__item slider__item">
-          <cite class="reviews__author-name">
-            имя
-          </cite>
-          <p class="reviews__text">
-            текст
-          </p>
+          <cite class="reviews__author-name">имя</cite>
+          <p class="reviews__text">текст</p>
         </blockquote>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button aria-label="1 страница отзывов" class="slider__toggle" type="button">1</button>
+          <button aria-label="2 страница отзывов" class="slider__toggle" type="button">2</button>
+          <button aria-label="3 страница отзывов" class="slider__toggle" type="button">3</button>
         </p>
       </div>
-    </section>
-    <section class="price">
-      <div class="price__wrapper slider">
-        <p class="price__type slider__info">Стандарт</p>
-        <p class="price-money slider__info">3,99 USD</p>
-        <ul class="price__description-list slider__list">
-          <li class="price__description-filter slider__item">
+    <!-- end .promo --> </section>
+    <section class="pricing-plans">
+      <div class="pricing-plans__wrapper slider">
+        <table class="pricing-plans__description-list slider__list">
+          <tr class="ppricing-plans__block">
+            <td class="pricing-plans__item slider__info">Стандарт 3,99 USD</td>
+            <td class="pricing-plans__item slider__info">Базовая 1,99 USD</td>
+            <td class="pricing-plans__item slider__info">Неограниченный 9,99 USD</td>
+          </tr>
+          <tr class="ppricing-plans__block">
+            <td class="pricing-plans__description slider__item">Розовый фильтр</td>
+            <td class="pricing-plans__description slider__item">Розовый фильтр</td>
+            <td class="pricing-plans__description slider__item">Розовый фильтр</td>
+          </tr>
+          <tr class="ppricing-plans__block">
+            <td class="pricing-plans__description slider__item">смайлики</td>
+            <td class="pricing-plans__description slider__item">смайлики</td>
+            <td class="pricing-plans__description slider__item">смайлики</td>
+          </tr>
+          <tr class="ppricing-plans__block">
+            <td class="pricing-plans__description slider__item">комментарии</td>
+            <td class="pricing-plans__description slider__item">комментарии</td>
+            <td class="pricing-plans__description slider__item">комментарии</td>
+          </tr>
+        </table>
+      <div class="pricing-plans__wrapper slider">
+        <p class="pricing-plans__item slider__info"></p>
+        <p class="pricing-plans__item slider__info"></p>
+        <ul class="pricing-plans__description-list slider__list">
+          <li class="pricing-plans__description slider__item">
             Розовый фильтр
           </li>
-          <li class="price__description-smile slider__item">
+          <li class="pricing-plans__description slider__item">
             смайлики
           </li>
-          <li class="price__description-comment slider__item">
+          <li class="pricing-plans__description slider__item">
             комментарии
           </li>
         </ul>
       </div>
-      <div class="price__wrapper slider">
-        <p class="price__type slider__info">Базовая</p>
-        <p class="price-money slider__info">1,99 USD</p>
-        <ul class="price__description-list slider__list">
-          <li class="price__description-filter slider__item">
+      <div class="pricing-plans__wrapper slider">
+        <ul class="pricing-plans__description-list slider__list">
+          <li class="pricing-plans__description slider__item">
             Розовый фильтр
           </li>
-          <li class="price__description-smile slider__item">
+          <li class="pricing-plans__description slider__item">
             смайлики
           </li>
-          <li class="price__description-comment slider__item">
+          <li class="pricing-plans__description slider__item">
             комментарии
           </li>
         </ul>
       </div>
-      <div class="price__wrapper slider">
-        <p class="price__type slider__info">Неограниченный</p>
-        <p class="price-money slider__info">9,99 USD</p>
-        <ul class="price__description-list slider__list">
-          <li class="price__description-filter slider__item">
-            Розовый фильтр
-          </li>
-          <li class="price__description-smile slider__item">
-            смайлики
-          </li>
-          <li class="price__description-comment slider__item">
-            комментарии
-          </li>
-        </ul>
-      </div>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+      <p class="pricing-plans__toggles slider__toggles">
+        <button aria-label="1 страница вида приложения" class="slider__toggle" type="button">1</button>
+        <button aria-label="2 страница вида приложения" class="slider__toggle" type="button">2</button>
+        <button aria-label="3 страница вида приложения" class="slider__toggle" type="button">3</button>
       </p>
-    </section>
+   <!-- end .promo --> </section>
   </main>
   <footer class="page-footer">
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты!</h2>
-      <b class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</b>
+      <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
       <ul class="contacts__list">
         <li class="contacts__item">
-          <h3 class="contacts__title">Звоните:
-          </h3>
+          <h3 class="contacts__title">Звоните:</h3>
           <a class="contacts__phone" href="tel:+78125556666">
             <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
           </a>
         </li>
         <li class="contacts__item">
-          <h3 class="contacts__title">Пишите
-          </h3>
+          <h3 class="contacts__title">Пишите</h3>
           <p class="contacts__email-adress">
             <a class="contacts__mail" href="#">mail@htmlacademy.ru</a>
           </p>
         </li>
         <li class="contacts__item">
-          <h3 class="contacts__title">Приезжайте в гости
-          </h3>
+          <h3 class="contacts__title">Приезжайте в гости</h3>
           <p class="contacts__description">
             ул. Большая Конюшенная 19/8
           </p>
         </li>
-        <a class="contacts__map">
-          <img class="contacts__map-image" src="img/iphone.svg" alt="Карта"></a>
       </ul>
-      </div>
-    </section>
+      <a class="contacts__map">
+          <img class="contacts__map-image" src="img/iphone.svg" alt="Карта"></a>
+   <!-- end .promo --> </section>
   </footer>
 </body>
 </html>
