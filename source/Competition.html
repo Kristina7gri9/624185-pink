@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Конкурс: Пинк</title>
 </head>
+
 <body>
   <header class="page-header">
     <a class="page-header__logo">
@@ -15,13 +17,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list ">
           <li class="site-list__item ">
-            <a aria-label="главная страница" href="index.html">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a aria-label="страница фотографий" href="photo.html">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a aria-label="страница конкурсов">Конкурс</a>
+            <a>Конкурс</a>
           </li>
           <li class="site-list__item">
             <a aria-label="страница академии" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -30,136 +32,144 @@
       </div>
     </nav>
   </header>
-  <main class="page-main">
-    <section class="intro"> <h1 class="page-main__competition">Конкурс на самое безбашенное путешествие с Пинк</h1></section>
-     <p class="page-main__condition">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
-        вашу бонусную карту! Пожалуйста, заполните </p>
-    <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
-      <section class="information-text">
-          <div class="information-text__surname">
-            <label class="information-text__label">Фамилия: </label>
-            <input class="information-text__input" type="text" name="фамилия" id="surname-field" placeholder="Укажите фамилию *">
-         </div>
-         <div class="information-text__name">
-            <label class="information-text__label">Имя:</label>
-            <input class="information-text__input" type="text" name="имя" id="name-field" placeholder="Введите ваше имя *">
-          </div>
-          <div class="information-text__patronimic">
-            <label class="information-text__label">Отчество: </label>
-            <input class="information-text__input" type="text" name="фамилия" id="patronymic-field" placeholder="Ну и отчество тоже">
-          </div>
+  <main class="page-main__condition">
+    <section class="intro">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
+    <p class="page-main__condition">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+      бонусную карту! Пожалуйста, заполните </p>
+    <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
+      <section class="form-contest__text">
+        <div class="form-contest__surname">
+          <label class="form-contest__label">Фамилия: </label>
+          <input class="form-contest__input" type="text" name="personal-info" value="surname" id="surname-field" placeholder="Укажите фамилию *">
+        </div>
+        <div class="form-contest__name">
+          <label class="form-contest__label">Имя:</label>
+          <input class="form-contest__input" type="text" name="personal-info" value="name" id="name-field" placeholder="Введите ваше имя *">
+        </div>
+        <div class="form-contest__patronimic">
+          <label class="form-contest__label">Отчество: </label>
+          <input class="form-contest__input" type="text" name="personal-info" value="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+        </div>
 
-    <!-- end .promo -->  </section>
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__title">Ваши безбашенные
+        <!-- end .promo -->
+      </section>
+      <section class="form-contest__advantages">
+        <div class="form-contest__wrapper">
+          <h2 class="form-contest__title">Ваши безбашенные
             достижения в путешествии</h2>
-          <div class="advantages__list">
-            <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="advantages" value="selfi" id="selfi-field" checked>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__input--checkbox" type="checkbox" name="advantages" value="selfi" id="selfi-field" checked>
               Сделал селфи с акулой
             </label>
-            </div>
-            <div class="advantages__list">
-            <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="advantages" value="beach" id="beach-field" checked>
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="beach" id="beach-field" checked>
               Обгорел на пляже
             </label>
           </div>
-          <div  class="advantages__list">
-            <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="advantages" value="chack noris" id="chack-field">
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="chack noris" id="chack-field">
               Видел Чака Норриса
             </label>
-            </div>
-            <div  class="advantages__list">
-            <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="advantages" value="suvenirs" id="suvenirs-field">
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="suvenirs" id="suvenirs-field">
               Накупил сувениров
             </label>
-            </div>
-            <div  class="advantages__list">
-            <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="advantages" value="town" id="town-field" checked>
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="town" id="town-field" checked>
               Удержал башню
             </label>
-            </div>
-           <div  class="advantages__list">
-            <label class="advantages__label">
-              <input class="advantages__input" type="checkbox" name="advantages" value="hotel" id="hotel-field">
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="hotel" id="hotel-field">
               Разгромил отель
             </label>
           </div>
         </div>
-    <!-- end .promo -->  </section>
-      <section class="adress">
-      <h2 class="visually-hidden">Введите Данные адреса почты и телефона</h2>
-          <div class="adress__info">
-          <label class="adress__label">
+        <!-- end .promo -->
+      </section>
+      <section class="form-contest__adress">
+        <h2 class="visually-hidden">Введите Данные адреса почты и телефона</h2>
+        <div class="form-contest__info">
+          <label class="form-contest__label--tel">
             Номер телефона
           </label>
-          <input class="adress__input" type="tel" name="tel" id="tel-field" placeholder="Номер, пожалуйста">
-          </div>
-          <div class="adress__info">
-          <label class="adress__label">
+          <input class="form-contest__input--tel" type="tel" name="tel" id="tel-field" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="form-contest__info">
+          <label class="form-contest__label--tel">
             Адрес почты
           </label>
-          <input class="adress__input" type="text" name="login" id="login-field" placeholder="Введите почту *">
+          <input class="form-contest__input--tel" type="text" name="login" id="login-field" placeholder="Введите почту *">
         </div>
-    <!-- end .promo -->  </section>
-      <section class="systems">
-          <h2 class="systems__choice">С каким приложением путешествовали?</h2>
-          <div class="systems__operation">
-            <label class="systems__label">
-            <input class="systems__input" type="radio" name="operation systems" value="ios" checked>
+        <!-- end .promo -->
+      </section>
+      <section class="form-contest__systems">
+        <h2 class="form-contest__choice">С каким приложением путешествовали?</h2>
+        <div class="form-contest__operation">
+          <label class="form-contest__label--radio">
+            <input class="form-contest__input--radio" type="radio" name="operation systems" value="ios" checked>
             Pink для iOS
           </label>
-          </div>
-          <div class="systems__operation">
-          <label class="systems__label">
-            <input class="systems__input" type="radio" name="operation systems" value="android" checked>
+        </div>
+        <div class="form-contest__operation">
+          <label class="form-contest__label--radio">
+            <input class="form-contest__input--radio" type="radio" name="operation systems" value="android" checked>
             Pink на Android
           </label>
-          </div>
-          <div class="systems__operation">
-          <label class="systems__label">
-            <input class="systems__input" type="radio" name="operation systems" value="windows" checked>
+        </div>
+        <div class="form-contest__operation">
+          <label class="form-contest__label--radio">
+            <input class="form-contest__input--radio" type="radio" name="operation systems" value="windows" checked>
             Windows Phone
           </label>
-          </div>
-    <!-- end .promo -->  </section>
-      <section class="emotion">
-        <div class="emotion__wrapper">
-          <h2 class="emotion__title">Опишите свои эмоции</h2>
+        </div>
+        <!-- end .promo -->
+      </section>
+      <section class="form-contest__emotion">
+        <div class="form-contest__wrapper--emotion">
+          <h2 class="form-contest__title">Опишите свои эмоции</h2>
           <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
-     <!-- end .promo --> </section>
-     <button aria-label="отправка формы" class="toggle" type="button">Отправить форму</button>
-      <sup>*</sup> — <p class="necessary-field">обязательные поля</p>
+        <!-- end .promo -->
+      </section>
+      <button aria-label="отправка формы" class="form-contest__toggle" type="button">Отправить форму</button>
+      <sup>*</sup> — <p class="form-contest__field">обязательные поля</p>
     </form>
   </main>
   <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
-        <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Очки»">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy">Мы в твитере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы в ютубе</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link button " href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
+      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Очки»">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy">Мы в твитере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы в ютубе</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
   </footer>
-  </body>
-  </html>
+</body>
+
+</html>
