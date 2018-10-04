@@ -38,10 +38,12 @@
     <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
       бонусную карту! Пожалуйста, заполните </p>
     <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
-      <section class="form-contest__text">
+      <fieldset class="form-contest__text">
+        <legend class="visually-hidden">Личная информация(ФИО)</legend>
         <div class="form-contest__surname">
           <label class="form-contest__label">Фамилия: </label>
-          <input class="form-contest__input" type="text" name="personal-info" value="surname" id="surname-field" placeholder="Укажите фамилию *">
+          <input class="form-contest__input" type="text" name="personal-info" value="surname" id="surname-field"
+            placeholder="Укажите фамилию *">
         </div>
         <div class="form-contest__name">
           <label class="form-contest__label">Имя:</label>
@@ -49,24 +51,26 @@
         </div>
         <div class="form-contest__patronimic">
           <label class="form-contest__label">Отчество: </label>
-          <input class="form-contest__input" type="text" name="personal-info" value="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+          <input class="form-contest__input" type="text" name="personal-info" value="patronymic" id="patronymic-field"
+            placeholder="Ну и отчество тоже">
         </div>
 
         <!-- end .promo -->
-      </section>
-      <section class="form-contest__advantages">
+      </fieldset>
+      <fieldset class="form-contest__advantages">
         <div class="form-contest__wrapper">
-          <h2 class="form-contest__title">Ваши безбашенные
-            достижения в путешествии</h2>
+          <legend class="form-contest__title">Ваши безбашенные достижения в путешествии</legend>
           <div class="form-contest__list">
             <label class="form-contest__label--checkbox">
-              <input class="form-contest__input--checkbox" type="checkbox" name="advantages" value="selfi" id="selfi-field" checked>
+              <input class="form-contest__input--checkbox" type="checkbox" name="advantages" value="selfi" id="selfi-field"
+                checked>
               Сделал селфи с акулой
             </label>
           </div>
           <div class="form-contest__list">
             <label class="form-contest__label--checkbox">
-              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="beach" id="beach-field" checked>
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="beach" id="beach-field"
+                checked>
               Обгорел на пляже
             </label>
           </div>
@@ -84,7 +88,8 @@
           </div>
           <div class="form-contest__list">
             <label class="form-contest__label--checkbox">
-              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="town" id="town-field" checked>
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="town" id="town-field"
+                checked>
               Удержал башню
             </label>
           </div>
@@ -96,9 +101,9 @@
           </div>
         </div>
         <!-- end .promo -->
-      </section>
-      <section class="form-contest__adress">
-        <h2 class="visually-hidden">Введите Данные адреса почты и телефона</h2>
+      </fieldset>
+      <fieldset class="form-contest__adress">
+        <legend class="visually-hidden">Введите Данные адреса почты и телефона</legend>
         <div class="form-contest__info">
           <label class="form-contest__label--tel">
             Номер телефона
@@ -112,9 +117,9 @@
           <input class="form-contest__input--tel" type="text" name="login" id="login-field" placeholder="Введите почту *">
         </div>
         <!-- end .promo -->
-      </section>
-      <section class="form-contest__systems">
-        <h2 class="form-contest__choice">С каким приложением путешествовали?</h2>
+      </fieldset>
+      <fieldset class="form-contest__systems">
+        <legend class="form-contest__title">С каким приложением путешествовали?</legend>
         <div class="form-contest__operation">
           <label class="form-contest__label--radio">
             <input class="form-contest__input--radio" type="radio" name="operation systems" value="ios" checked>
@@ -134,14 +139,14 @@
           </label>
         </div>
         <!-- end .promo -->
-      </section>
-      <section class="form-contest__emotion">
+      </fieldset>
+      <fieldset class="form-contest__emotion">
         <div class="form-contest__wrapper--emotion">
-          <h2 class="form-contest__title">Опишите свои эмоции</h2>
+          <legend class="form-contest__title">Опишите свои эмоции</legend>
           <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
         <!-- end .promo -->
-      </section>
+      </fieldset>
       <button aria-label="отправка формы" class="form-contest__toggle" type="button">Отправить форму</button>
       <sup>*</sup> — <p class="form-contest__field">обязательные поля</p>
     </form>
@@ -154,13 +159,13 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twiter" href="https://vk.com/htmlacademy">Мы в твитере</a>
+          <a aria-label=">Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a aria-label="Мы в Фейсбуке" class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы в ютубе</a>
+          <a aria-label="Мы в ютубе" class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"></a>
         </li>
       </ul>
     </div>
