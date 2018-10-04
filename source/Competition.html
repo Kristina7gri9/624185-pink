@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Конкурс: Пинк</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list ">
+          <li class="site-list__item ">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="intro">
+      <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
+    <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+      бонусную карту! Пожалуйста, заполните </p>
+    <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="form-contest__text">
+        <legend class="visually-hidden">Личная информация(ФИО)</legend>
+        <div class="form-contest__surname">
+          <label class="form-contest__label">Фамилия: </label>
+          <input class="form-contest__input" type="text" name="personal-info" value="surname" id="surname-field"
+            placeholder="Укажите фамилию *">
+        </div>
+        <div class="form-contest__name">
+          <label class="form-contest__label">Имя:</label>
+          <input class="form-contest__input" type="text" name="personal-info" value="name" id="name-field" placeholder="Введите ваше имя *">
+        </div>
+        <div class="form-contest__patronimic">
+          <label class="form-contest__label">Отчество: </label>
+          <input class="form-contest__input" type="text" name="personal-info" value="patronymic" id="patronymic-field"
+            placeholder="Ну и отчество тоже">
+        </div>
+
+        <!-- end .promo -->
+      </fieldset>
+      <fieldset class="form-contest__advantages">
+        <div class="form-contest__wrapper">
+          <legend class="form-contest__title">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__input--checkbox" type="checkbox" name="advantages" value="selfi" id="selfi-field"
+                checked>
+              Сделал селфи с акулой
+            </label>
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="beach" id="beach-field"
+                checked>
+              Обгорел на пляже
+            </label>
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="chack noris" id="chack-field">
+              Видел Чака Норриса
+            </label>
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="suvenirs" id="suvenirs-field">
+              Накупил сувениров
+            </label>
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="town" id="town-field"
+                checked>
+              Удержал башню
+            </label>
+          </div>
+          <div class="form-contest__list">
+            <label class="form-contest__label--checkbox">
+              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="hotel" id="hotel-field">
+              Разгромил отель
+            </label>
+          </div>
+        </div>
+        <!-- end .promo -->
+      </fieldset>
+      <fieldset class="form-contest__adress">
+        <legend class="visually-hidden">Введите Данные адреса почты и телефона</legend>
+        <div class="form-contest__info">
+          <label class="form-contest__label--tel">
+            Номер телефона
+          </label>
+          <input class="form-contest__input--tel" type="tel" name="tel" id="tel-field" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="form-contest__info">
+          <label class="form-contest__label--tel">
+            Адрес почты
+          </label>
+          <input class="form-contest__input--tel" type="text" name="login" id="login-field" placeholder="Введите почту *">
+        </div>
+        <!-- end .promo -->
+      </fieldset>
+      <fieldset class="form-contest__systems">
+        <legend class="form-contest__title">С каким приложением путешествовали?</legend>
+        <div class="form-contest__operation">
+          <label class="form-contest__label--radio">
+            <input class="form-contest__input--radio" type="radio" name="operation systems" value="ios" checked>
+            Pink для iOS
+          </label>
+        </div>
+        <div class="form-contest__operation">
+          <label class="form-contest__label--radio">
+            <input class="form-contest__input--radio" type="radio" name="operation systems" value="android" checked>
+            Pink на Android
+          </label>
+        </div>
+        <div class="form-contest__operation">
+          <label class="form-contest__label--radio">
+            <input class="form-contest__input--radio" type="radio" name="operation systems" value="windows" checked>
+            Windows Phone
+          </label>
+        </div>
+        <!-- end .promo -->
+      </fieldset>
+      <fieldset class="form-contest__emotion">
+        <div class="form-contest__wrapper--emotion">
+          <legend class="form-contest__title">Опишите свои эмоции</legend>
+          <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </div>
+        <!-- end .promo -->
+      </fieldset>
+      <button aria-label="отправка формы" class="form-contest__toggle" type="button">Отправить форму</button>
+      <sup>*</sup> — <p class="form-contest__field">обязательные поля</p>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
+      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Очки»">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a aria-label=">Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
+        </li>
+        <li class="social__item">
+          <a aria-label="Мы в Фейсбуке" class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+        </li>
+        <li class="social__item">
+          <a aria-label="Мы в ютубе" class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
+</html>
