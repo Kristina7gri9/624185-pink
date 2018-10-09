@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Конкурс: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/outlines.css">
 </head>
 
 <body>
@@ -61,41 +65,41 @@
         <div class="form-contest__wrapper">
           <legend class="form-contest__title">Ваши безбашенные достижения в путешествии</legend>
           <div class="form-contest__list">
-            <label class="form-contest__label--checkbox">
-              <input class="form-contest__input--checkbox" type="checkbox" name="advantages" value="selfi" id="selfi-field"
+            <label class="form-contest__label form-contest__label--checkbox">
+              <input class="form-contest__input form-contest__input--checkbox" type="checkbox" name="advantages" value="selfi" id="selfi-field"
                 checked>
               Сделал селфи с акулой
             </label>
           </div>
           <div class="form-contest__list">
-            <label class="form-contest__label--checkbox">
-              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="beach" id="beach-field"
+            <label class="form-contest__label form-contest__label--checkbox">
+              <input class="form-contest__input form-contest__input--checkbox" type="checkbox" name="advantages" value="beach" id="beach-field"
                 checked>
               Обгорел на пляже
             </label>
           </div>
           <div class="form-contest__list">
-            <label class="form-contest__label--checkbox">
-              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="chack noris" id="chack-field">
+            <label class="form-contest__label form-contest__label--checkbox">
+              <input class="form-contest__input form-contest__input--checkbox" type="checkbox" name="advantages" value="chack noris" id="chack-field">
               Видел Чака Норриса
             </label>
           </div>
           <div class="form-contest__list">
-            <label class="form-contest__label--checkbox">
-              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="suvenirs" id="suvenirs-field">
+            <label class="form-contest__label form-contest__label--checkbox">
+              <input class="form-contest__input form-contest__input--checkbox" type="checkbox" name="advantages" value="suvenirs" id="suvenirs-field">
               Накупил сувениров
             </label>
           </div>
           <div class="form-contest__list">
-            <label class="form-contest__label--checkbox">
-              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="town" id="town-field"
+            <label class="form-contest__label form-contest__label--checkbox">
+              <input class="form-contest__input form-contest__input--checkbox" type="checkbox" name="advantages" value="town" id="town-field"
                 checked>
               Удержал башню
             </label>
           </div>
           <div class="form-contest__list">
-            <label class="form-contest__label--checkbox">
-              <input class="form-contest__label--checkbox" type="checkbox" name="advantages" value="hotel" id="hotel-field">
+            <label class="form-contest__label form-contest__label--checkbox">
+              <input class="form-contest__input form-contest__input--checkbox" type="checkbox" name="advantages" value="hotel" id="hotel-field">
               Разгромил отель
             </label>
           </div>
@@ -105,45 +109,45 @@
       <fieldset class="form-contest__adress">
         <legend class="visually-hidden">Введите Данные адреса почты и телефона</legend>
         <div class="form-contest__info">
-          <label class="form-contest__label--tel">
+          <label class="form-contest__label form-contest__label--tel">
             Номер телефона
           </label>
-          <input class="form-contest__input--tel" type="tel" name="tel" id="tel-field" placeholder="Номер, пожалуйста">
+          <input class="form-contest__input form-contest__label--tel" type="tel" name="tel" id="tel-field" placeholder="Номер, пожалуйста">
         </div>
         <div class="form-contest__info">
-          <label class="form-contest__label--tel">
+          <label class="form-contest__label form-contest__label--tel">
             Адрес почты
           </label>
-          <input class="form-contest__input--tel" type="text" name="login" id="login-field" placeholder="Введите почту *">
+          <input class="form-contest__input form-contest__label--tel" type="text" name="login" id="login-field" placeholder="Введите почту *">
         </div>
         <!-- end .promo -->
       </fieldset>
       <fieldset class="form-contest__systems">
         <legend class="form-contest__title">С каким приложением путешествовали?</legend>
         <div class="form-contest__operation">
-          <label class="form-contest__label--radio">
-            <input class="form-contest__input--radio" type="radio" name="operation systems" value="ios" checked>
+          <label class="form-contest__label form-contest__label--radio">
+            <input class="form-contest__input form-contest__input--radio" type="radio" name="operation systems" value="ios" checked>
             Pink для iOS
           </label>
         </div>
         <div class="form-contest__operation">
-          <label class="form-contest__label--radio">
-            <input class="form-contest__input--radio" type="radio" name="operation systems" value="android" checked>
+          <label class="form-contest__label form-contest__label--radio">
+            <input class="form-contest__input form-contest__input--radio" type="radio" name="operation systems" value="android" checked>
             Pink на Android
           </label>
         </div>
         <div class="form-contest__operation">
-          <label class="form-contest__label--radio">
-            <input class="form-contest__input--radio" type="radio" name="operation systems" value="windows" checked>
+          <label class="form-contest__label form-contest__label--radio">
+            <input class="form-contest__input form-contest__input--radio" type="radio" name="operation systems" value="windows" checked>
             Windows Phone
           </label>
         </div>
         <!-- end .promo -->
       </fieldset>
       <fieldset class="form-contest__emotion">
-        <div class="form-contest__wrapper--emotion">
+        <div class="form-contest__wrapper form-contest__wrapper--emotion">
           <legend class="form-contest__title">Опишите свои эмоции</legend>
-          <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="form-contest__text" name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
         <!-- end .promo -->
       </fieldset>
