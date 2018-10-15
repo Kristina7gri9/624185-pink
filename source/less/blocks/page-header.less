@@ -3,17 +3,27 @@
   border-top: 2px solid #485461;
 }
 .page-header__logo-image {
-  padding: 20px;
+  padding: 0;
   width: 75px;
   height: 22px;
 }
 
 .page-header__toggle {
+  background-image: url('../img/icon-menu-burger.svg');
+  background-repeat: no-repeat;
   width: 50px;
   height:24px;
+  padding: 0;
+  border: none;
   &:active {
     background-image: url('../img/icon-menu-cross.svg');
     background-size: 24px 23px;
-    background: no-repeat;
+    background-repeat: no-repeat;
+    padding: 0;
           }
   }
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
