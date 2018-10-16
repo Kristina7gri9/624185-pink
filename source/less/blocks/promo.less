@@ -1,12 +1,28 @@
 .promo {
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
-  background-size: 320px 395px;
+  background-size: cover;
+  background-color: #25313f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .promo--index {
+  min-height: 462px;
+  }
+  .promo--competition {
+    min-height: 237px;
+  }
+  .promo--photo {
+    min-height: 237px;
   }
 .promo__image {
-  width: 235px;
-  height: 296px;
+  width: 258px;
+  height: 286px;
   background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0px;
 }
 .promo__title {
   color: #ffffff;
@@ -15,4 +31,5 @@
   text-align: center;
   margin: 0;
   padding: 20px;
+  font-weight: 300;
 }
