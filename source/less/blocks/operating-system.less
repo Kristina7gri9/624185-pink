@@ -3,32 +3,34 @@
   padding-bottom: 0;
   margin: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.operating-system__item a {
+.operating-system__link {
   display: block;
   padding: 10px;
   font-size: 0;
-}
 
-.operating-system__link--ios {
-  background-image: url('../img/logo-apple.svg');
-  width: 47px;
-  height: 56px;
-  background-repeat: no-repeat;
-}
+  &--ios {
+    background-image: url('../img/logo-apple.svg');
+    width: 47px;
+    height: 56px;
+    background-repeat: no-repeat;
+  }
 
-.operating-system__link--windows {
-  background-image: url('../img/logo-microsoft.svg');
-  background-repeat: no-repeat;
-  width: 44px;
-  height: 41px;
-}
+  &--windows {
+    background-image: url('../img/logo-microsoft.svg');
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 41px;
+  }
 
-.operating-system__link--android {
-  background-image: url('../img/logo-android.svg');
-  background-repeat: no-repeat;
-  width: 43px;
-  height: 47px;
+  &--android {
+    background-image: url('../img/logo-android.svg');
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 47px;
+  }
+
 }
