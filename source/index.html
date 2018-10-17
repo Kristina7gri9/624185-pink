@@ -10,11 +10,11 @@
 
 <body>
   <header class="page-header">
-  <div class="page-header__wrapper">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
-    </a>
-    <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
     </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -90,10 +90,9 @@
             </p>
           </li>
           <li class="advantages__img">
-  <img class="advantages__img-phone" src="img/iphone-screen-mobile@1x.png" alt="Картинка телефона">
+            <img class="advantages__img-phone" src="img/iphone-screen-mobile@1x.png" alt="Картинка телефона">
           </li>
         </ul>
-
       </div>
       <!-- end .promo -->
     </section>
@@ -114,11 +113,11 @@
           <cite class="reviews__author-name">имя</cite>
           <p class="reviews__text">текст</p>
         </blockquote>
-        <p class="reviews__toggles slider">
-          <button aria-label="1 страница отзывов" class="slider__toggle" type="button"></button>
-          <button aria-label="2 страница отзывов" class="slider__toggle" type="button"></button>
-          <button aria-label="3 страница отзывов" class="slider__toggle" type="button"></button>
-        </p>
+        <div class="reviews__toggles slider">
+          <button class="slider__toggle slider__toggle--active" aria-label="1 страница вида приложения"  type="button"></button>
+          <button class="slider__toggle slider__toggle--active" aria-label="2 страница вида приложения"  type="button"></button>
+          <button class="slider__toggle slider__toggle--active" aria-label="3 страница вида приложения"  type="button"></button>
+        </div>
       </div>
       <!-- end .promo -->
     </section>
@@ -130,7 +129,7 @@
             <td class="pricing-plans__item slider__info">Базовая </td>
             <td class="pricing-plans__item slider__info">Неограниченный </td>
           </tr>
-           <tr class="pricing-plans__block">
+          <tr class="pricing-plans__block">
             <td class="pricing-plans__price slider__price"> 3,99 USD</td>
             <td class="pricing-plans__price slider__price"> 1,99 USD</td>
             <td class="pricing-plans__price slider__price"> 9,99 USD</td>
@@ -152,9 +151,9 @@
           </tr>
         </table>
         <p class="pricing-plans__toggles slider">
-          <button aria-label="1 страница вида приложения" class="slider__toggle" type="button"></button>
-          <button aria-label="2 страница вида приложения" class="slider__toggle" type="button"></button>
-          <button aria-label="3 страница вида приложения" class="slider__toggle" type="button"></button>
+          <button class="slider__toggle slider__toggle--active" aria-label="1 страница вида приложения"  type="button"></button>
+          <button class="slider__toggle slider__toggle--active" aria-label="2 страница вида приложения"  type="button"></button>
+          <button class="slider__toggle slider__toggle--active" aria-label="3 страница вида приложения"  type="button"></button>
         </p>
         <!-- end .promo -->
     </section>
@@ -172,7 +171,7 @@
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">Пишите</h3>
-            <a class="contacts__info" href="#">mail@htmlacademy.ru</a>
+          <a class="contacts__info" href="#">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">Приезжайте в гости</h3>
