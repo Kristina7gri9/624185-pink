@@ -4,36 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title>Фотографии: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип Пинк»">
-    </a>
-    <nav class="main-nav">
-      <button class="maim-nav__toggle" type="button" aria-label="Закрыть"></button>
+  <header class="page-header page-header--opened"><!-- page-header--closed модификатор для закрытого состояния меню-->
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+    </div>
+    <nav class="page-header__menu main-nav">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list ">
-          <li class="site-list__item ">
-            <a href="index.html">Главная</a>
-          </li>
+        <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
+            <a class="site-list__title">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="Competition.html">Конкурс</a>
+            <a class="site-list__title" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__title" href="Competition.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="page-main">
-    <section class="intro">
-      <h1 class="visually-hidden">Лента фотографий пользователей</h1>
+    <section class="promo promo--photo">
+      <h1 class="promo__title">Фотографии пользователей</h1>
     </section>
     <section class="catalog">
       <div class="catalog__wrapper">
@@ -43,75 +47,90 @@
         <ul class="catalog__list">
           <li class="catalog__tape">
             <p class="catalog__review">
-              <img class="catalog__review-image" src="img/hh." width="" height="" alt="фотография-пост">
+              <img class="catalog__review-image catalog__review-image--panorama" src="img/panorama-mobile@1x.jpg" width="320"
+                height="137" alt="фотография-пост">
             </p>
-            <p class="catalog__author"><span class="catalog__author-name">Анна</span><span class="catalog__author-time-post">(5
+            <p class="catalog__author"><span class="catalog__author--name">Анна</span><span class="catalog__author--time-post">(5
                 минут назад)</span> </p>
             <p class="catalog__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
               перископе, задавайте свои вопросы!
             </p>
-            <img class="catalog__heart" src="" width="" height="" alt="лайк">
-            <p class="catalog__like">Нравится: 215</p>
+            <div class="catalog__like-wrapper">
+              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+              <p class="catalog__like">Нравится: 215</p>
+            </div>
           </li>
           <li class="catalog__tape">
             <p class="catalog__review">
-              <img class="catalog__review-image" src="img/hh." width="" height="" alt="фотография-пост">
+              <img class="catalog__review-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
             </p>
-            <p class="catalog__author"><span class="catalog__author-name">Левон</span><span class="catalog__author-time-post">(5
+            <p class="catalog__author"><span class="catalog__author--name">Левон</span><span class="catalog__author--time-post">(5
                 часов назад)</span> </p>
             <p class="catalog__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <img class="catalog__heart" src="" width="" height="" alt=" лайк">
-            <p class="catalog__like">Нравится: 356</p>
+            <div class="catalog__like-wrapper">
+              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+              <p class="catalog__like">Нравится: 356</p>
+            </div>
           </li>
           <li class="catalog__tape">
             <p class="catalog__review">
-              <img class="catalog__review-image" src="img/hh." width="" height="" alt="фотография-пост">
+              <img class="catalog__review-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
             </p>
-            <p class="catalog__author"><span class="catalog__author-name">Антон</span><span class="catalog__author-time-post">(12
+            <p class="catalog__author"><span class="catalog__author--name">Антон</span><span class="catalog__author--time-post">(12
                 часов назад)</span> </p>
             <p class="catalog__text">Соседи будут рады!</p>
-            <img class="catalog__heart" src="" width="" height="" alt=" лайк">
-            <p class="catalog__like">Нравится: 666</p>
+            <div class="catalog__like-wrapper">
+              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+              <p class="catalog__like">Нравится: 666</p>
+            </div>
           </li>
           <li class="catalog__tape">
             <p class="catalog__review">
-              <img class="catalog__review-image" src="img/hh." width="" height="" alt="фотография-пост">
+              <img class="catalog__review-image" src="img/photo-window-mobile@1x.jpg" width="" height="" alt="фотография-пост">
             </p>
-            <p class="catalog__author"><span class="catalog__author-name">Борис</span><span class="catalog__author-time-post">(20
+            <p class="catalog__author"><span class="catalog__author--name">Борис</span><span class="catalog__author--time-post">(20
                 часов назад)</span> </p>
             <p class="catalog__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <img class="catalog__heart" src="" width="" height="" alt=" лайк">
-            <p class="catalog__like">Нравится: 215</p>
+            <div class="catalog__like-wrapper">
+              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+              <p class="catalog__like">Нравится: 215</p>
+            </div>
           </li>
           <li class="catalog__tape">
             <p class="catalog__review">
-              <img class="catalog__review-image" src="img/hh." width="" height="" alt="фотография-пост">
+              <img class="catalog__review-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
             </p>
-            <p class="catalog__author"><span class="catalog__author-name">Сергей</span><span class="catalog__author-time-post">(25
+            <p class="catalog__author"><span class="catalog__author--name">Сергей</span><span class="catalog__author--time-post">(25
                 часов назад)</span> </p>
             <p class="catalog__text">Самая кубанская в мире!</p>
-            <img class="catalog__heart" src="" width="" height="" alt="лайк">
-            <p class="catalog__like">Нравится: 4</p>
+            <div class="catalog__like-wrapper">
+              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+              <p class="catalog__like">Нравится: 4</p>
+            </div>
           </li>
           <li class="catalog__tape">
             <p class="catalog__review">
-              <img class="catalog__review-image" src="img/hh." width="" height="" alt="фотография-пост">
+              <img class="catalog__review-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
             </p>
-            <p class="catalog__author"><span class="catalog__author-name">Максим</span><span class="catalog__author-time-post">(40
+            <p class="catalog__author"><span class="catalog__author--name">Максим</span><span class="catalog__author--time-post">(40
                 часов назад)</span> </p>
             <p class="catalog__text">Где снег-то?</p>
-            <img class="catalog__heart" src="" width="" height="" alt=" лайк">
-            <p class="catalog__like">Нравится: 150</p>
+            <div class="catalog__like-wrapper">
+              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+              <p class="catalog__like">Нравится: 150</p>
+            </div>
           </li>
           <li class="catalog__tape">
             <p class="catalog__review">
-              <img class="catalog__review-image" src="img/hh." width="" height="" alt="фотография-пост">
+              <img class="catalog__review-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
             </p>
-            <p class="catalog__author"><span class="catalog__author-name">Надежда</span><span class="catalog__author-time-post">(45
+            <p class="catalog__author"><span class="catalog__author--name">Надежда</span><span class="catalog__author--time-post">(45
                 часов назад)</span> </p>
             <p class="catalog__text">Всем GM и взаимные лайки</p>
-            <img class="catalog__heart" src="" width="" height="" alt="лайк">
-            <p class="catalog__like">Нравится: 2560</p>
+            <div class="catalog__like-wrapper">
+              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+              <p class="catalog__like">Нравится: 2560</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -122,7 +141,7 @@
         <div class="post__wrapper">
           <h2 class="visually-hidden">Выкладываем свои фотографии</h2>
           <p class="post__text">Затмите всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <img class="post__photo-image" src="" width="" height="" alt="Личная фотка">
+          <img class="post__photo-image" src="img/photo-road-mobile@1x.jpg" width="280" height="180" alt="Личная фотка">
           <div class="post__wrapper editor">
             <div class="post__item">
               <label class="post__label" for="cut-off-field">Обрезать</label>
@@ -142,16 +161,16 @@
           <div class="post__wrapper-button">
             <button class="post__toggle" type="submit">Запостить</button>
             <button class="post__toggle" type="reset">Отмена</button>
+          </div>
+        </div>
+        </div>
       </form>
-      </div>
-      </div>
       <!-- end .promo -->
     </section>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип Пинк»">
-      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Очки»">
+      <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Пинк»">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -167,8 +186,10 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
+      </a>
     </div>
   </footer>
 </body>
