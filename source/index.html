@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <header class="page-header page-header--opened"><!-- page-header--closed модификатор для закрытого состояния меню-->
+  <header class="page-header page-header--opened">
+    <!-- page-header--closed модификатор для закрытого состояния меню-->
     <div class="page-header__wrapper">
       <a class="page-header__logo-image"></a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
@@ -36,7 +37,7 @@
   <main class="page-main">
     <section class="promo promo--index">
       <h1 class="visually-hidden">Приложение Пинк</h1>
-      <img class="promo__image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Screen-hand">
+      <a class="promo__image"></a>
     </section>
     <section class="download-app">
       <h2 class="visually-hidden">Операционные системы, на которые доступно скачивание приложения Пинк</h2>
@@ -58,10 +59,10 @@
       <!-- end .promo -->
     </section>
     <section class="advantages">
+      <h2 class="visually-hidden">Преимущества приложения</h2>
+      <p class="advantages__text">Устали от серости мегаполиса?</p>
+      <p class="advantages__text"> Нам есть, что вам предложить!</p>
       <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Преимущества приложения</h2>
-        <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text"> Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">
@@ -87,10 +88,21 @@
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
-          <li class="advantages__img">
-            <img class="advantages__img-phone" src="img/iphone-screen-mobile@1x.png" alt="Картинка телефона">
-          </li>
         </ul>
+        <a class="advantages__img-phone"></a>
+      </div>
+      <!-- end .promo -->
+    </section>
+    <section class="desktop-block">
+      <h2 class="visually-hidden">Плюс приложения</h2>
+      <div class="desktop-block__wrapper">
+        <a class="desktop-block__image"></a>
+        <div class="desktop-block__wrap">
+          <p class="desktop-block__title">Эффект<br> на 24 часа!</p>
+          <p class="desktop-block__text">Британские ученые провели исследования и доказали, что положительный эффект от
+            использования приложения длится целые сутки!</p>
+          <a class="desktop-block__info">Узнать больше об исследовании</a>
+        </div>
       </div>
       <!-- end .promo -->
     </section>
@@ -98,6 +110,7 @@
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__list slider">
         <blockquote class="reviews__item slider__item">
+          <p class="reviews__author-info">25 лет, водитель трамвая</p>
           <cite class="reviews__author-name">Николай Петров</cite>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я
@@ -151,6 +164,36 @@
       </p>
       <!-- end .promo -->
     </section>
+    <section class="pricing-plans-desktop slider">
+      <div class="pricing-plans__wrapper">
+        <table class="pricing-plans-desktop__description-list">
+          <tr class="pricing-plans-desktop__block">
+            <td class="pricing-plans-desktop__empty"></td>
+            <td class="pricing-plans-desktop__item">База<br> <span class="pricing-plans__price">1,99 USD</span> </td>
+            <td class="pricing-plans-desktop__item">Стандарт<br> <span class="pricing-plans__price">3,99 USD</span> </td>
+            <td class="pricing-plans-desktop__item">Анлим<br><span class="pricing-plans__price">9,99 USD</span> </td>
+          </tr>
+          <tr class="ppricing-plans-desktop__block">
+            <td class="pricing-plans-desktop__description">Розовый фильтр</td>
+            <td class="pricing-plans-desktop__description"></td>
+            <td class="pricing-plans-desktop__description"></td>
+            <td class="pricing-plans-desktop__price"></td>
+          </tr>
+          <tr class="pricing-plans-desktop__block">
+            <td class="pricing-plans-desktop__description">Смайлики</td>
+            <td class="pricing-plans-desktop__description"></td>
+            <td class="pricing-plans-desktop__description"></td>
+            <td class="pricing-plans-desktop__price"></td>
+          </tr>
+          <tr class="pricing-plans-desktop__block">
+            <td class="pricing-plans-desktop__description">Комментарии</td>
+            <td class="pricing-plans-desktop__description"></td>
+            <td class="pricing-plans-desktop__description"></td>
+            <td class="pricing-plans-desktop__price"></td>
+          </tr>
+        </table>
+        <!-- end .promo -->
+    </section>
   </main>
   <footer class="page-footer">
     <section class="contacts">
@@ -160,22 +203,49 @@
         <li class="contacts__item">
           <h3 class="contacts__title">Звоните:</h3>
           <a class="contacts__phone" href="tel:+78125556666">
-            <span class="contacts__info">+7 (812) 555-66-66</span>
+            <span class="contacts__info contacts__info-desktop">+7 (812) 555-66-66</span>
           </a>
         </li>
         <li class="contacts__item">
-          <h3 class="contacts__title">Пишите</h3>
-          <a class="contacts__info" href="#">mail@htmlacademy.ru</a>
+          <h3 class="contacts__title">Пишите:</h3>
+          <a class="contacts__info contacts__info-desktop" href="#">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
-          <h3 class="contacts__title">Приезжайте в гости</h3>
+          <h3 class="contacts__title">Приезжайте в гости:</h3>
           <p class="contacts__info">
             ул. Большая Конюшенная 19/8
           </p>
+          <p class="contacts__info-desktop">
+              ул. Большая<br> Конюшенная 19/8
+            </p>
         </li>
       </ul>
       <a class="contacts__map-image"></a>
       <!-- end .promo -->
+    </section>
+    <section class="page-footer-desktop">
+        <a class="page-footer__logo">
+            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
+          </a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a aria-label=">Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
+              </li>
+              <li class="social__item">
+                <a aria-label="Мы в Фейсбуке" class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+              </li>
+              <li class="social__item">
+                <a aria-label="Мы в ютубе" class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано:</p>
+            <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
+            </a>
+          </div>
     </section>
   </footer>
 </body>

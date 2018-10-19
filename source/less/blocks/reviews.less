@@ -11,11 +11,36 @@
   text-align: center;
   font-style: normal;
 }
-
+.reviews__author-info{
+  display: none;
+}
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
   padding: 0;
   margin: 0;
   text-align: center;
+}
+.reviews__list {
+  padding-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__author-info {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  .reviews {
+    margin-top: 50px;
+  }
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .reviews__text {
+    margin-bottom: 45px;
+  }
 }

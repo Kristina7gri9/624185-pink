@@ -24,10 +24,53 @@
   text-align: center;
 }
 
+.contacts__info-desktop {
+  display: none;
+}
+
 .contacts__map-image {
   display: block;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   width: 320px;
   height: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    margin: 0 50px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__title {
+    margin: 0;
+  }
+
+  .contacts__info {
+    display: none;
+  }
+
+  .contacts__info-desktop {
+    display: block;
+    margin: 0;
+    margin-top: 15px;
+    color: #d22856;
+    font-size: 24px;
+    line-height: 1, 2;
+  }
+
+  .contacts__map-image {
+    display: block;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 660px 372px;
+    width: 660px;
+    height: 372px;
+  }
 }
