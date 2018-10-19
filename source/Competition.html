@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="page-header page-header--opened page-header--closed">
+  <header class="page-header page-header--opened"><!-- page-header--closed модификатор для закрытого состояния меню-->
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
@@ -22,16 +22,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__title">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__title" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="Competition.html">Конкурс</a>
+            <a class="site-list__title" href="Competition.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -46,15 +46,15 @@
     <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form-contest__text">
         <legend class="visually-hidden">Личная информация(ФИО)</legend>
-        <div class="form-contest__surname">
+        <div class="form-contest__area-name">
           <label class="form-contest__label">Фамилия: </label>
           <input class="form-contest__input" type="text" name="personal-info" id="surname-field" placeholder="Укажите фамилию *">
         </div>
-        <div class="form-contest__name">
+        <div class="form-contest__area-name">
           <label class="form-contest__label">Имя:</label>
           <input class="form-contest__input" type="text" name="personal-info" id="name-field" placeholder="Введите ваше имя *">
         </div>
-        <div class="form-contest__patronimic">
+        <div class="form-contest__area-name">
           <label class="form-contest__label">Отчество: </label>
           <input class="form-contest__input" type="text" name="personal-info" id="patronymic-field" placeholder="Ну и отчество тоже">
         </div>
@@ -148,7 +148,7 @@
       </fieldset>
       <fieldset class="form-contest__emotion">
         <div class="form-contest__description">
-          <legend class="form-contest__title">Опишите свои эмоции</legend>
+          <legend class="form-contest__title--emotion">Опишите свои эмоции</legend>
           <textarea class="form-contest__text" name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
         <!-- end .promo -->
