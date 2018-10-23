@@ -38,7 +38,9 @@
   background-color: #f2f2f2;
   margin-bottom: 40px;
 }
-
+.catalog__review-image--panorama {
+  width: 100%;
+}
 .catalog__text {
   font-size: 14px;
   line-height: 24px;
@@ -78,7 +80,9 @@
 .catalog__review-tablet {
   display: none;
 }
-
+.catalog__image {
+  display: none;
+}
 @media (min-width: @tablet-width) {
   .catalog__title {
     width: 440px;
@@ -92,7 +96,7 @@
     margin: 0;
   }
 
-  .catalog__review-tablet--panorama {
+  .catalog__review--panorama {
     display: block;
     margin-left: -20px;
   }
@@ -113,7 +117,7 @@
     margin: 0;
   }
 
-  .catalog__tape--panorama {
+  .catalog__review--panorama {
     width: 100%;
   }
 
@@ -121,7 +125,7 @@
     width: 300px;
   }
 
-  .catalog__review-tablet {
+  .catalog__image {
     display: block;
   }
 

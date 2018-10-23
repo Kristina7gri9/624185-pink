@@ -11,38 +11,44 @@
 </head>
 
 <body>
-  <header class="page-header page-header--opened">
-    <!-- page-header--closed модификатор для закрытого состояния меню-->
-    <div class="page-header__wrapper">
-      <a class="page-header__logo-image"></a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-    </div>
-    <nav class="page-header__menu main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__title" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__title" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__title">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+    <header class="page-header page-header--opened">
+        <!-- page-header--closed модификатор для закрытого состояния меню-->
+        <div class="container">
+          <div class="page-header__container">
+          <div class="page-header__wrapper">
+            <a class="page-header__logo-image"></a>
+            <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+          </div>
+        <nav class="page-header__menu main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__title">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__title" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__title" href="competition.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </header>
+        </div>
+      </header>
   <main class="page-main">
     <section class="promo promo--competition">
       <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
     <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
       бонусную карту! </p>
+      <p class="page-main__text page-main__text--addition">Пожалуйста, заполните форму ниже:</p>
     <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
+      <div class="container">
       <fieldset class="form-contest__text">
         <legend class="visually-hidden">Личная информация(ФИО)</legend>
         <div class="form-contest__area-name">
@@ -59,6 +65,9 @@
         </div>
         <!-- end .promo -->
       </fieldset>
+      </div>
+      <div class="addition">
+      <div class="container addition">
       <fieldset class="form-contest__advantages">
         <div class="form-contest__wrapper">
           <legend class="form-contest__title">Ваши безбашенные достижения в путешествии</legend>
@@ -101,8 +110,11 @@
         </div>
         <!-- end .promo -->
       </fieldset>
+    </div>
+      </div>
+    <div class="container">
       <fieldset class="form-contest__adress">
-        <legend class="visually-hidden">Введите Данные адреса почты и телефона</legend>
+          <legend class="form-contest__title form-contest__title--contact">Контактная информация</legend>
         <div class="form-contest__info">
           <label class="form-contest__label form-contest__label--tel">
             Номер телефона
@@ -118,6 +130,9 @@
         </div>
         <!-- end .promo -->
       </fieldset>
+      </div>
+      <div class="addition">
+      <div class="container addition">
       <fieldset class="form-contest__systems">
         <div class="form-contest__wrapper">
           <legend class="form-contest__title">С каким приложением путешествовали?</legend>
@@ -145,19 +160,30 @@
         </div>
         <!-- end .promo -->
       </fieldset>
+    </div>
+      </div>
+    <div class="container">
       <fieldset class="form-contest__emotion">
         <div class="form-contest__description">
-          <legend class="form-contest__title--emotion">Опишите свои эмоции</legend>
-          <textarea class="form-contest__text" name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <legend class="form-contest__title form-contest__title--emotion">Опишите свои эмоции</legend>
+          <textarea class="form-contest__textarea" name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
         <!-- end .promo -->
       </fieldset>
+    </div>
+    <div class="container">
+      <div class="form-contest__sent">
       <button aria-label="отправка формы" class="form-contest__toggle" type="button">Отправить форму</button>
       <p class="form-contest__field"> <sup>*</sup> — обязательные поля</p>
+    </div>
+  </div>
     </form>
+    </div>
   </main>
-  <footer class="page-footer footer">
-    <a class="page-footer__logo footer__logo">
+  <footer class="page-footer">
+    <div class="container">
+      <section class="page-footer__section">
+    <a class="page-footer__logo">
       <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
     </a>
     <div class="page-footer__social social">
@@ -179,6 +205,8 @@
         <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
       </a>
     </div>
+  </section>
+  </div>
   </footer>
 </body>
 

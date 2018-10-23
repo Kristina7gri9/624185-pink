@@ -91,3 +91,32 @@
   top: 200px;
 }
 }
+
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  &--index {
+    min-height: 855px;
+  }
+  &--competition {
+    min-height: 385px;
+  }
+
+  &--photo {
+    min-height: 400px;
+  }
+}
+  .promo__title-index {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  .promo__image {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 1050px 645px;
+    width: 1050px;
+    height: 645px;
+    left: 400px;
+  }
+}

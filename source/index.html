@@ -11,10 +11,12 @@
 <body>
   <header class="page-header page-header--opened">
     <!-- page-header--closed модификатор для закрытого состояния меню-->
-    <div class="page-header__wrapper">
-      <a class="page-header__logo-image"></a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-    </div>
+    <div class="container">
+      <div class="page-header__container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo-image"></a>
+        <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+      </div>
     <nav class="page-header__menu main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -33,14 +35,18 @@
         </ul>
       </div>
     </nav>
+  </div>
+    </div>
   </header>
   <main class="page-main">
-    <div class="container">
       <section class="promo promo--index">
+          <div class="container">
         <h1 class="promo__title-index">Взгляните<br> на жизнь<br> иначе!</h1>
+      </div>
         <a class="promo__image"></a>
       </section>
       <section class="download-app">
+          <div class="container">
         <h2 class="visually-hidden">Операционные системы, на которые доступно скачивание приложения Пинк</h2>
         <button class="download-app__toggle" type="button">Скачать приложение</button>
         <div class="download-app__operating-system operating-system">
@@ -57,17 +63,19 @@
           </ul>
         </div>
         <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
     <!-- end .promo -->
-    </section>
+  </div>
+  </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества приложения</h2>
       <p class="advantages__text">Устали от серости мегаполиса?</p>
       <p class="advantages__text"> Нам есть, что вам<br> предложить!</p>
+      <div class="advantages__container">
       <div class="container">
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">
+              <a class="advantages__img advantages__bw-img"></a>
               <h3 class="advantages__title">
                 Поднимает настроение
               </h3>
@@ -76,6 +84,7 @@
               </p>
             </li>
             <li class="advantages__item">
+                <a class="advantages__img advantages__img-color"></a>
               <h3 class="advantages__title">
                 Меняет мир вокруг
               </h3>
@@ -84,6 +93,7 @@
               </p>
             </li>
             <li class="advantages__item">
+                <a class="advantages__img advantages__img-smile"></a>
               <h3 class="advantages__title">
                 Заводит новых друзей
               </h3>
@@ -95,6 +105,7 @@
           <a class="advantages__img-phone"></a>
         </div>
       </div>
+    </div>
       <!-- end .promo -->
     </section>
     <section class="effection-block">
@@ -184,35 +195,35 @@
       <!-- end .promo -->
     </section>
     <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты!</h2>
-        <p class="contacts__text">Остались вопросы?<br> Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__title">Звоните:</h3>
-            <a class="contacts__phone" href="tel:+78125556666">
-              <span class="contacts__info contacts__information">+7 (812) 555-66-66</span>
-            </a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">Пишите:</h3>
-            <a class="contacts__info contacts__information" href="#">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">Приезжайте в гости:</h3>
-            <p class="contacts__info">
-              ул. Большая Конюшенная 19/8
-            </p>
-            <p class="contacts__information">
-              ул. Большая<br> Конюшенная 19/8
-            </p>
-          </li>
-        </ul>
-        <a class="contacts__map-image"></a>
-      </section>
+      <h2 class="visually-hidden">Наши контакты!</h2>
+      <p class="contacts__text">Остались вопросы?<br> Свяжитесь с нами!</p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <h3 class="contacts__title">Звоните:</h3>
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__info contacts__information">+7 (812) 555-66-66</span>
+          </a>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Пишите:</h3>
+          <a class="contacts__info contacts__information" href="#">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Приезжайте в гости:</h3>
+          <p class="contacts__info">
+            ул. Большая Конюшенная 19/8
+          </p>
+          <p class="contacts__information">
+            ул. Большая<br> Конюшенная 19/8
+          </p>
+        </li>
+      </ul>
+      <a class="contacts__map-image"></a>
+    </section>
   </main>
   <footer class="page-footer">
-      <div class="container">
-    <section class="footer">
+    <div class="container">
+      <section class="footer">
         <a class="footer__logo">
           <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
         </a>
@@ -235,8 +246,8 @@
             <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
           </a>
         </div>
-    </section>
-  </div>
+      </section>
+    </div>
   </footer>
 </body>
 
