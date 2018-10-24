@@ -6,7 +6,6 @@
   fieldset {
     margin-bottom: 20px;
     border: 0 none;
-    padding: 0;
   }
 }
 
@@ -108,7 +107,7 @@
 }
 
 .form-contest__operation {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 .form-contest__systems {
@@ -160,20 +159,19 @@
   .form-contest {
     padding: 20px;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 
     fieldset {
       background-color: #ffffff;
       border: 1px solid #e5e5e5;
-      padding: 0 20px;
     }
   }
 
   .form-contest__area-name {
     display: flex;
-  }
-
-  .form-contest__text {
-    padding: 0;
   }
 
   .form-contest__input {
@@ -190,6 +188,10 @@
     &--radio {
       width: 38px;
     }
+
+    &--name {
+      width: 100%;
+    }
   }
 
   .form-contest__label {
@@ -198,18 +200,9 @@
     &--tel {
       padding: 0;
       margin-top: 18px;
-      margin-bottom: 35px;
+      margin-bottom: 15px;
     }
 
-  }
-
-  .form-contest__input--name {
-    width: 525px;
-  }
-
-  .form-contest__title--contact {
-    display: block;
-    margin: 0;
   }
 
   .form-contest__wrapper {
@@ -218,47 +211,119 @@
 
   .form-contest__info {
     display: flex;
-    width: 500px;
     flex-direction: column-reverse;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .form-contest__textarea {
     padding: 20px;
-    width: 458px;
+    width: 100%;
     height: 148px;
   }
 
   .form-contest__description {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .form-contest__title--emotion {
-    padding: 0;
-  }
-
-  .form-contest__sent {
-    display: flex;
-    justify-content: space-between;
+    margin-right: 40px;
   }
 
   .form-contest__text {
     order: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .form-contest__systems {
     margin: 0;
     order: 2;
+    padding: 55px 60px;
+    width: 100%;
   }
 
   .form-contest__adress {
     order: 3;
+    padding: 55px 60px;
+    width: 100%;
+    padding-bottom: 0;
   }
 
   .form-contest__advantages {
     order: 4;
+    padding: 55px 60px;
+    width: 100%;
+  }
+
+  .form-contest__emotion {
+    order: 5;
+    padding: 55px 60px;
+    padding-top: 40px;
+    width: 100%;
+  }
+
+  .form-contest__sent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    order: 6;
+  }
+  .form-contest__title {
+    text-align: center;
+    padding: 0 32px;
+
+  &--contact {
+    display: block;
+    margin: 0;
+  }
+}
+}
+@media (min-width: @desktop-width) {
+  .form-contest__text {
+    width: 434px;
+    height: 292px;
+  }
+  .form-contest__systems {
+   padding: 0;
+   width: 433px;
+   height: 310px;
+  }
+  .form-contest__area-name {
+    margin-bottom: 47px;
+  }
+  .form-contest__operation {
+    margin-bottom: 34px;
+  }
+  .form-contest__wrapper {
+    padding-left: 60px;
+    padding-top: 40px;
+    &--checkbox {
+      display: flex;
+      padding: 0;
+    }
+  }
+  .form-contest__title {
+    line-height: 30px;
+  }
+  .form-contest__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-contest__input {
+&--checkbox {
+  margin-right: 20px;
+}
+
+  &--tel {
+    width: 335px;
+  }
+}
+  .form-contest__info {
+    width: 376px;
+  }
+  .form-contest__label--checkbox {
+    padding: 0;
+  }
+  .form-contest__checkbox {
+    margin-right: 59px;
+    &--last {
+      margin-right: 0;
+    }
   }
 }

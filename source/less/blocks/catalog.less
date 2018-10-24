@@ -6,6 +6,7 @@
 
 .catalog__author {
   margin: 0;
+  padding-top: 25px;
 
   &--name {
     font-size: 14px;
@@ -35,12 +36,32 @@
 }
 
 .catalog__tape--panorama {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   margin-bottom: 40px;
 }
 
+.catalog__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+.catalog__author--info {
+  order: 1;
+}
+.catalog__like-wrapper--info {
+  order: 2;
+  margin-right: 25px;
+}
+.catalog__text--info {
+  order: 3;
+}
 .catalog__review-image--panorama {
   width: 100%;
+}
+
+.catalog__review {
+  margin: 0;
 }
 
 .catalog__text {
@@ -67,13 +88,18 @@
 
 .catalog__like-wrapper {
   display: flex;
+  align-items: center;
   padding-left: 20px;
   padding-bottom: 20px;
 }
 
 .catalog__review-image--panorama {
-  width: 100%;
-  margin-left: -20px;
+  display: block;
+  background-image: url("../img/panorama-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 137px;
 }
 
 .catalog__review-tablet--panorama {
@@ -107,9 +133,21 @@
     margin-right: auto;
   }
 
+  .catalog__tape {
+    width: 300px;
+  }
+
   .catalog__review--panorama {
     display: block;
-    margin-left: -20px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 509px;
+  }
+
+  .catalog__image {
+    display: block;
   }
 
   .catalog__review-image--panorama {
@@ -127,21 +165,6 @@
     justify-content: space-between;
   }
 
-  .catalog__review {
-    margin: 0;
-  }
-
-  .catalog__review--panorama {
-    width: 100%;
-  }
-
-  .catalog__tape {
-    width: 300px;
-  }
-
-  .catalog__image {
-    display: block;
-  }
 
   .catalog__review-image {
     display: none;
@@ -153,6 +176,17 @@
     align-items: center;
     padding: 20px;
     padding-left: 0;
+  }
+
+  .catalog__info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 156px;
+  }
+
+  .catalog__tape--panorama {
+    width: auto;
   }
 }
 
@@ -171,5 +205,15 @@
 
   .catalog__title {
     font-size: 18px;
+  }
+
+  .catalog__panorama {
+    display: block;
+    background-image: url("../img/panorama-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 506px;
+
   }
 }

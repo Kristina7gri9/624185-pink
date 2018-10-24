@@ -24,10 +24,6 @@
   text-align: center;
 }
 
-.contacts__info-desktop {
-  display: none;
-}
-
 .contacts__map-image {
   display: block;
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -35,7 +31,9 @@
   width: 320px;
   height: 200px;
 }
-
+br {
+  display: none;
+}
 @media (min-width: @tablet-width) {
   .contacts__list {
     display: flex;
@@ -57,10 +55,6 @@
   }
 
   .contacts__info {
-    display: none;
-  }
-
-  .contacts__information {
     display: block;
     margin: 0;
     margin-top: 15px;
@@ -76,6 +70,9 @@
     background-size: 660px 372px;
     width: 660px;
     height: 372px;
+  }
+  br {
+    display: block;
   }
 }
 
