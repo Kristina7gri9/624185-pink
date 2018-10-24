@@ -11,25 +11,25 @@
 </head>
 
 <body>
-    <header class="page-header page-header--opened">
-        <!-- page-header--closed модификатор для закрытого состояния меню-->
-        <div class="container">
-          <div class="page-header__container">
-          <div class="page-header__wrapper">
-            <a class="page-header__logo-image"></a>
-            <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-          </div>
+  <header class="page-header page-header--opened">
+    <!-- page-header--closed модификатор для закрытого состояния меню-->
+    <div class="container">
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo-image"></a>
+          <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+        </div>
         <nav class="page-header__menu main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__title">Главная</a>
+                <a class="site-list__title" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__title" href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__title" href="competition.html">Конкурс</a>
+                <a class="site-list__title">Конкурс</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -38,17 +38,16 @@
           </div>
         </nav>
       </div>
-        </div>
-      </header>
+    </div>
+  </header>
   <main class="page-main">
     <section class="promo promo--competition">
       <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
     <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
       бонусную карту! </p>
-      <p class="page-main__text page-main__text--addition">Пожалуйста, заполните форму ниже:</p>
-    <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
-      <div class="container">
+    <p class="page-main__text page-main__text--addition">Пожалуйста, заполните форму ниже:</p>
+    <form class="form-contest container" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form-contest__text">
         <legend class="visually-hidden">Личная информация(ФИО)</legend>
         <div class="form-contest__area-name">
@@ -57,7 +56,8 @@
         </div>
         <div class="form-contest__area-name">
           <label class="form-contest__label">Имя:</label>
-          <input class="form-contest__input form-contest__input--name" type="text" name="personal-info" id="name-field" placeholder="Введите ваше имя *">
+          <input class="form-contest__input form-contest__input--name" type="text" name="personal-info" id="name-field"
+            placeholder="Введите ваше имя *">
         </div>
         <div class="form-contest__area-name">
           <label class="form-contest__label">Отчество: </label>
@@ -65,10 +65,7 @@
         </div>
         <!-- end .promo -->
       </fieldset>
-      </div>
-      <div class="addition">
-      <div class="container addition">
-      <fieldset class="form-contest__advantages">
+      <fieldset class="form-contest__advantages form-contest__advantages--background">
         <div class="form-contest__wrapper">
           <legend class="form-contest__title">Ваши безбашенные достижения в путешествии</legend>
           <div class="form-contest__list">
@@ -110,11 +107,8 @@
         </div>
         <!-- end .promo -->
       </fieldset>
-    </div>
-      </div>
-    <div class="container">
       <fieldset class="form-contest__adress">
-          <legend class="form-contest__title form-contest__title--contact">Контактная информация</legend>
+        <legend class="form-contest__title form-contest__title--contact">Контактная информация</legend>
         <div class="form-contest__info">
           <label class="form-contest__label form-contest__label--tel">
             Номер телефона
@@ -130,10 +124,7 @@
         </div>
         <!-- end .promo -->
       </fieldset>
-      </div>
-      <div class="addition">
-      <div class="container addition">
-      <fieldset class="form-contest__systems">
+      <fieldset class="form-contest__systems form-contest__system--background">
         <div class="form-contest__wrapper">
           <legend class="form-contest__title">С каким приложением путешествовали?</legend>
           <div class="form-contest__operation">
@@ -160,9 +151,6 @@
         </div>
         <!-- end .promo -->
       </fieldset>
-    </div>
-      </div>
-    <div class="container">
       <fieldset class="form-contest__emotion">
         <div class="form-contest__description">
           <legend class="form-contest__title form-contest__title--emotion">Опишите свои эмоции</legend>
@@ -170,43 +158,40 @@
         </div>
         <!-- end .promo -->
       </fieldset>
-    </div>
-    <div class="container">
       <div class="form-contest__sent">
-      <button aria-label="отправка формы" class="form-contest__toggle" type="button">Отправить форму</button>
-      <p class="form-contest__field"> <sup>*</sup> — обязательные поля</p>
-    </div>
-  </div>
+        <button aria-label="отправка формы" class="form-contest__toggle" type="button">Отправить форму</button>
+        <p class="form-contest__field"> <sup>*</sup> — обязательные поля</p>
+      </div>
     </form>
     </div>
   </main>
   <footer class="page-footer">
     <div class="container">
       <section class="page-footer__section">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a aria-label=">Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
-        </li>
-        <li class="social__item">
-          <a aria-label="Мы в Фейсбуке" class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
-        </li>
-        <li class="social__item">
-          <a aria-label="Мы в ютубе" class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"></a>
-        </li>
-      </ul>
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a aria-label=">Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a aria-label="Мы в Фейсбуке" class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a aria-label="Мы в ютубе" class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
+          </a>
+        </div>
+      </section>
     </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
-      </a>
-    </div>
-  </section>
-  </div>
   </footer>
 </body>
 

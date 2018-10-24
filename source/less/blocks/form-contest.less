@@ -9,9 +9,11 @@
     padding: 0;
   }
 }
+
 .form-contest__title--contact {
   display: none;
 }
+
 .form-contest__area-name {
   margin-bottom: 26px;
 }
@@ -78,7 +80,8 @@
 }
 
 .form-contest__advantages {
-padding-left: 0;
+  padding-left: 0;
+  background-color: #f2f2f2;
 }
 
 .form-contest__wrapper {
@@ -157,77 +160,105 @@ padding-left: 0;
   .form-contest {
     padding: 20px;
     margin: 0;
+
     fieldset {
-    background-color: #ffffff;
-    border: 1px solid #e5e5e5;
-    padding: 0 20px;
+      background-color: #ffffff;
+      border: 1px solid #e5e5e5;
+      padding: 0 20px;
+    }
   }
-}
+
   .form-contest__area-name {
-display: flex;
-}
-.form-contest__text {
-  padding: 0;
-}
-.form-contest__input {
-  width: 485px;
-  &--checkbox {
-    width: 38px;
+    display: flex;
   }
 
-  &--tel {
-    width: 458px;
-  }
-
-  &--radio {
-    width: 38px;
-  }
-}
-.form-contest__label {
-  padding-right: 20px;
-  &--tel {
+  .form-contest__text {
     padding: 0;
-    margin-top: 18px;
-    margin-bottom: 35px;
   }
 
-}
-.form-contest__input--name {
-width: 525px;
-}
-.form-contest__systems {
-  margin: 0;
-}
-.form-contest__title--contact {
-  display: block;
-  margin: 0;
-}
-.form-contest__wrapper {
-  padding: 0;
-}
-.form-contest__info {
-display: flex;
-width: 500px;
-flex-direction: column-reverse;
-margin-left: auto;
-margin-right: auto;
-}
-.form-contest__textarea {
-padding: 20px;
-  width: 458px;
-height: 148px;
-}
-.form-contest__description {
-  width: 500px;
-  margin-left: auto;
-margin-right: auto;
-}
-.form-contest__title--emotion {
-  padding: 0;
-}
-.form-contest__sent {
-  display: flex;
-  justify-content: space-between;
+  .form-contest__input {
+    width: 485px;
 
-}
+    &--checkbox {
+      width: 38px;
+    }
+
+    &--tel {
+      width: 458px;
+    }
+
+    &--radio {
+      width: 38px;
+    }
+  }
+
+  .form-contest__label {
+    padding-right: 20px;
+
+    &--tel {
+      padding: 0;
+      margin-top: 18px;
+      margin-bottom: 35px;
+    }
+
+  }
+
+  .form-contest__input--name {
+    width: 525px;
+  }
+
+  .form-contest__title--contact {
+    display: block;
+    margin: 0;
+  }
+
+  .form-contest__wrapper {
+    padding: 0;
+  }
+
+  .form-contest__info {
+    display: flex;
+    width: 500px;
+    flex-direction: column-reverse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-contest__textarea {
+    padding: 20px;
+    width: 458px;
+    height: 148px;
+  }
+
+  .form-contest__description {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-contest__title--emotion {
+    padding: 0;
+  }
+
+  .form-contest__sent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-contest__text {
+    order: 1;
+  }
+
+  .form-contest__systems {
+    margin: 0;
+    order: 2;
+  }
+
+  .form-contest__adress {
+    order: 3;
+  }
+
+  .form-contest__advantages {
+    order: 4;
+  }
 }
