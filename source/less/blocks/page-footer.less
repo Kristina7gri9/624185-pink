@@ -1,15 +1,20 @@
 .page-footer {
   margin-top: 20px;
 }
-
+.page-footer--index {
+  display: none;
+}
 .page-footer__logo {
   position: relative;
-  left: 90px;
+  left: 80px;
   width: 150px;
   height: 40px;
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer--index {
+    display: block;
+  }
   .page-footer__section {
     display: flex;
     justify-content: space-between;
