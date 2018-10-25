@@ -42,13 +42,13 @@
   </header>
   <main class="page-main">
     <section class="promo promo--competition">
-      <h1 class="promo__title">Конкурс на самое безбашенное<br> путешествие с Пинк</h1>
+      <h1 class="promo__title promo__title--center">Конкурс на самое безбашенное<br> путешествие с Пинк</h1>
     </section>
     <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
       бонусную карту! </p>
     <p class="page-main__text page-main__text--addition">Пожалуйста, заполните форму ниже:</p>
     <form class="form-contest container" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form-contest__text">
+      <div class="form-contest__text form-contest__general">
         <legend class="visually-hidden">Личная информация(ФИО)</legend>
         <div class="form-contest__area-name">
           <label class="form-contest__label">Фамилия: </label>
@@ -66,8 +66,8 @@
             placeholder="Ну и отчество тоже">
         </div>
         <!-- end .promo -->
-      </fieldset>
-      <fieldset class="form-contest__advantages form-contest__advantages--background">
+      </div>
+      <fieldset class="form-contest__advantages form-contest__general form-contest__background">
         <legend class="form-contest__title">Ваши безбашенные достижения в путешествии</legend>
         <div class="form-contest__wrapper form-contest__wrapper--checkbox">
           <div class="form-contest__checkbox">
@@ -115,7 +115,7 @@
         </div>
         <!-- end .promo -->
       </fieldset>
-      <fieldset class="form-contest__adress">
+      <fieldset class="form-contest__adress form-contest__general">
         <legend class="form-contest__title form-contest__title--contact">Контактная информация</legend>
         <div class="form-contest__flex">
           <div class="form-contest__info">
@@ -135,7 +135,7 @@
         </div>
         <!-- end .promo -->
       </fieldset>
-      <fieldset class="form-contest__systems form-contest__system--background">
+      <fieldset class="form-contest__systems form-contest__general form-contest__background">
         <legend class="form-contest__title">С каким приложением путешествовали?</legend>
         <div class="form-contest__wrapper">
           <div class="form-contest__operation">
@@ -162,7 +162,7 @@
         </div>
         <!-- end .promo -->
       </fieldset>
-      <fieldset class="form-contest__emotion">
+      <fieldset class="form-contest__emotion form-contest__general">
         <legend class="form-contest__title form-contest__title--emotion">Опишите свои эмоции</legend>
         <div class="form-contest__description">
           <textarea class="form-contest__textarea" name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
