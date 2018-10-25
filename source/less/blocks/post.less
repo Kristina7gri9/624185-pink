@@ -1,6 +1,8 @@
-.post {
+.post__wrapper {
   background-color: #f2f2f2;
   padding: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .post__text {
@@ -8,10 +10,38 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 20px;
 }
 
-.post__item {
-  display: inline-block;
+.post__label {
+  font-size: 0;
+}
+
+.post__text--additional {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+.post__range {
+  padding: 20px 60px;
+
+}
+
+.post__photo-road {
+  display: none;
+}
+
+.post__photo-image {
+  display: block;
+}
+
+.post__wrapper-editor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .post__toggle {
@@ -25,4 +55,126 @@
   border: 3px solid #d22857;
   background-color: #f2f2f2;
   margin-bottom: 20px;
+}
+
+.post__range-editor {
+  display: none;
+}
+
+.post__photo-winter {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .post__text {
+    padding: 0 20px;
+    padding-top: 40px;
+  }
+
+  .post__text--additional {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .post__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post__wrap {
+    width: 300px;
+  }
+
+  .post__photo-road {
+    display: block;
+  }
+
+  .post__photo-image {
+    display: none;
+  }
+
+  .post__range {
+    display: none;
+  }
+
+  .post__input {
+    display: none;
+  }
+
+  .post__range-editor {
+    display: block;
+    width: 204px;
+  }
+
+  .post__item {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dddfe0;
+    padding: 20px 0;
+    width: 275px;
+  }
+
+  .post__wrapper-editor {
+    margin-bottom: 50px;
+  }
+
+  .post__toggle {
+    width: 260px;
+  }
+
+  .post__wrapper-button {
+    text-align: center;
+  }
+
+  .post__item--end {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post__text {
+    font-size: 18px;
+  }
+
+  .post__wrapper {
+    padding-left: 80px;
+    padding-right: 60px;
+    justify-content: flex-start;
+  }
+
+  .post__wrap {
+    padding-left: 90px;
+    width: 410px;
+  }
+
+  .post__item {
+    width: 410px;
+  }
+
+  .post__photo-winter {
+    display: block;
+  }
+
+  .post__photo-road {
+    display: none;
+  }
+
+  .post__range-editor {
+    width: 290px;
+  }
+
+  .post__toggle {
+    padding: 15px;
+    width: 183px;
+    align-items: flex-end;
+  }
+
+  .post__wrapper-editor {
+    margin-bottom: 120px;
+  }
+
+  .post__wrapper-button {
+    display: flex;
+    justify-content: space-between;
+  }
 }

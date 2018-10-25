@@ -21,3 +21,32 @@
   line-height: 24px;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .download-app {
+    padding-right: 0;
+    background-color: transparent;
+    z-index: 10;
+    padding-bottom: 100px;
+  }
+
+  .download-app__toggle {
+    width: 300px;
+    background-color: transparent;
+  }
+
+  .download-app__text {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app__toggle {
+    font-size: 21px;
+    line-height: 18px;
+  }
+
+  .download-app__text {
+    font-size: 18px;
+  }
+}

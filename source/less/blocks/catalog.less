@@ -6,6 +6,7 @@
 
 .catalog__author {
   margin: 0;
+  padding-top: 25px;
 
   &--name {
     font-size: 14px;
@@ -34,6 +35,35 @@
   margin-bottom: 20px;
 }
 
+.catalog__tape--panorama {
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.catalog__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+.catalog__author--info {
+  order: 1;
+}
+
+.catalog__like-wrapper--info {
+  order: 2;
+  margin-right: 25px;
+}
+
+.catalog__text--info {
+  order: 3;
+}
+
+.catalog__review {
+  margin: 0;
+}
+
 .catalog__text {
   font-size: 14px;
   line-height: 24px;
@@ -58,10 +88,111 @@
 
 .catalog__like-wrapper {
   display: flex;
+  align-items: center;
   padding-left: 20px;
   padding-bottom: 20px;
 }
 
 .catalog__review-image--panorama {
-  margin-left: -20px;
+  width: 100%;
+  height: 137px;
+}
+
+.catalog__image {
+  display: none;
+}
+
+.catalog__image-post {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__title {
+    width: 440px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .catalog__tape {
+    width: 300px;
+  }
+
+  .catalog__image {
+    display: block;
+  }
+
+  .catalog__image--panorama {
+    width: 100%;
+    height: 509px;
+  }
+
+  .catalog__review-image {
+    display: none;
+  }
+
+  .catalog__image-post {
+    display: none;
+  }
+
+  .catalog__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .catalog__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  .catalog__like-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 0;
+  }
+
+  .catalog__info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 156px;
+  }
+
+  .catalog__tape--panorama {
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__image-post {
+    display: block;
+  }
+
+  .catalog__panorama {
+    width: 100%;
+    height: 506px;
+  }
+
+  .catalog__review-image {
+    display: none;
+  }
+
+  .catalog__image {
+    display: none;
+  }
+
+  .catalog__title {
+    font-size: 18px;
+  }
 }

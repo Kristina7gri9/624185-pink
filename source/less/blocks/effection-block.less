@@ -1,0 +1,118 @@
+.effection-block {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effection-block {
+    display: block;
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+  .effection-block__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .effection-block__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d22856;
+    font-size: 96px;
+    line-height: 149px;
+    width: 174px;
+    height: 174px;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .effection-block__image::before {
+    display: block;
+    content: "";
+    background-image: url("../img/icon-timer.svg");
+    background-size: 240px 276px;
+    width: 240px;
+    height: 276px;
+    position: absolute;
+    left: -33px;
+    top: -70px;
+    z-index: -1;
+  }
+
+  .effection-block__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 22px;
+  }
+
+  .effection-block__text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .effection-block__info {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+    text-decoration-line: underline;
+  }
+
+  .effection-block__wrap {
+    width: 310px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effection-block__title {
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .effection-block__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  .effection-block {
+    background-color: #f2f2f2;
+    padding: 0;
+    padding-bottom: 86px;
+  }
+
+  .effection-block__wrapper {
+    justify-content: flex-start;
+    height: 300px;
+  }
+
+  .effection-block__wrap {
+    padding-left: 100px;
+    width: 510px;
+  }
+
+  .effection-block br {
+    display: none;
+  }
+
+  .effection-block__image {
+    margin-left: 40px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .effection-block__image::before {
+    background-size: 300px 350px;
+    width: 300px;
+    height: 350px;
+    left: -53px;
+    top: -100px;
+  }
+}

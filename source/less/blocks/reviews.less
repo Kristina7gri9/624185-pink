@@ -12,10 +12,70 @@
   font-style: normal;
 }
 
+.reviews__author-info {
+  display: none;
+}
+
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
   padding: 0;
   margin: 0;
   text-align: center;
+}
+
+.reviews__list {
+  padding-top: 20px;
+}
+
+.reviews__addition-image {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__author-info {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .reviews {
+    margin-top: 50px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__text {
+    margin-bottom: 45px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .reviews__addition-image {
+    display: block;
+    background-image: url("../img/icon-quotes.svg");
+    background-size: 80px 62px;
+    width: 80px;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+  }
 }

@@ -9,187 +9,244 @@
 </head>
 
 <body>
-  <header class="page-header page-header--opened"><!-- page-header--closed модификатор для закрытого состояния меню-->
-    <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк»">
-      </a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-    </div>
-    <nav class="page-header__menu main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__title">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__title" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__title" href="Competition.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+  <header class="page-header page-header--opened">
+    <!-- page-header--closed модификатор для закрытого состояния меню-->
+    <div class="container">
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo-image" href="index.html" ></a>
+          <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <nav class="page-header__menu main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__title" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__title">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__title" href="competition.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="promo promo--photo">
-      <h1 class="promo__title">Фотографии пользователей</h1>
+      <h1 class="promo__title promo__title--center">Фотографии<br> пользователей</h1>
     </section>
     <section class="catalog">
       <div class="catalog__wrapper">
-        <p class="catalog__title">
-          Взгляните на фотографии,которые выкладывают пользователи! Видите,как не хватает ваших?
-        </p>
+        <div class="container">
+          <p class="catalog__title">
+            Взгляните на фотографии,которые выкладывают пользователи! Видите,как не хватает ваших?
+          </p>
+        </div>
         <ul class="catalog__list">
-          <li class="catalog__tape">
-            <p class="catalog__review">
+          <li class="catalog__tape catalog__tape--panorama">
+            <a class="catalog__review" href="#">
               <img class="catalog__review-image catalog__review-image--panorama" src="img/panorama-mobile@1x.jpg" width="320"
                 height="137" alt="фотография-пост">
-            </p>
-            <p class="catalog__author"><span class="catalog__author--name">Анна</span><span class="catalog__author--time-post">(5
-                минут назад)</span> </p>
-            <p class="catalog__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!
-            </p>
-            <div class="catalog__like-wrapper">
-              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
-              <p class="catalog__like">Нравится: 215</p>
+              <img class="catalog__image catalog__image--panorama" src="img/panorama-tablet@1x.jpg" width="660" height="510"
+                alt="фотография-пост">
+              <img class="catalog__image-post catalog__panorama" src="img/panorama-desktop@1x.jpg" width="1200" height="506"
+                alt="фотография-пост">
+            </a>
+            <div class="container">
+              <div class="catalog__info">
+                <p class="catalog__author catalog__author--info"><span class="catalog__author--name">Анна</span><span
+                    class="catalog__author--time-post">(5
+                    минут назад)</span> </p>
+                <p class="catalog__text catalog__text--info">Прыгать или нет? Напишите в комментарии свой совет и
+                  смотрите прямую трансляцию
+                  в
+                  перископе, задавайте свои вопросы!
+                </p>
+                <div class="catalog__like-wrapper catalog__like-wrapper--info">
+                  <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+                  <p class="catalog__like">Нравится: 215</p>
+                </div>
+              </div>
             </div>
           </li>
-          <li class="catalog__tape">
-            <p class="catalog__review">
-              <img class="catalog__review-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-            </p>
-            <p class="catalog__author"><span class="catalog__author--name">Левон</span><span class="catalog__author--time-post">(5
-                часов назад)</span> </p>
-            <p class="catalog__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="catalog__like-wrapper">
-              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
-              <p class="catalog__like">Нравится: 356</p>
+          <div class="container">
+            <div class="catalog__flex">
+              <li class="catalog__tape">
+                <a class="catalog__review" href="#">
+                  <img class="catalog__review-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
+                  <img class="catalog__image" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                  <img class="catalog__image-post" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                </a>
+                <div class="catalog__info-text">
+                  <p class="catalog__author"><span class="catalog__author--name">Левон</span><span class="catalog__author--time-post">(5
+                      часов назад)</span> </p>
+                  <p class="catalog__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <div class="catalog__like-wrapper">
+                    <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+                    <p class="catalog__like">Нравится: 356</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__tape">
+                <a class="catalog__review" href="#">
+                  <img class="catalog__review-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
+                  <img class="catalog__image" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                  <img class="catalog__image-post" src="img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                </a>
+                <div class="catalog__info-text">
+                  <p class="catalog__author"><span class="catalog__author--name">Антон</span><span class="catalog__author--time-post">(12
+                      часов назад)</span> </p>
+                  <p class="catalog__text">Соседи будут рады!</p>
+                  <div class="catalog__like-wrapper">
+                    <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+                    <p class="catalog__like">Нравится: 666</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__tape">
+                <a class="catalog__review" href="#">
+                  <img class="catalog__review-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
+                  <img class="catalog__image" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                  <img class="catalog__image-post" src="img/photo-window-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                </a>
+                <div class="catalog__info-text">
+                  <p class="catalog__author"><span class="catalog__author--name">Борис</span><span class="catalog__author--time-post">(20
+                      часов назад)</span> </p>
+                  <p class="catalog__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <div class="catalog__like-wrapper">
+                    <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+                    <p class="catalog__like">Нравится: 215</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__tape">
+                <a class="catalog__review" href="#">
+                  <img class="catalog__review-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
+                  <img class="catalog__image" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                  <img class="catalog__image-post" src="img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                </a>
+                <div class="catalog__info-text">
+                  <p class="catalog__author"><span class="catalog__author--name">Сергей</span><span class="catalog__author--time-post">(25
+                      часов назад)</span> </p>
+                  <p class="catalog__text">Самая кубанская в мире!</p>
+                  <div class="catalog__like-wrapper">
+                    <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+                    <p class="catalog__like">Нравится: 4</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__tape">
+                <a class="catalog__review" href="#">
+                  <img class="catalog__review-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
+                  <img class="catalog__image" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                  <img class="catalog__image-post" src="img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                </a>
+                <div class="catalog__info-text">
+                  <p class="catalog__author"><span class="catalog__author--name">Максим</span><span class="catalog__author--time-post">(40
+                      часов назад)</span> </p>
+                  <p class="catalog__text">Где снег-то?</p>
+                  <div class="catalog__like-wrapper">
+                    <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+                    <p class="catalog__like">Нравится: 150</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__tape">
+                <a class="catalog__review" href="#">
+                  <img class="catalog__review-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
+                  <img class="catalog__image" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                  <img class="catalog__image-post" src="img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                </a>
+                <div class="catalog__info-text">
+                  <p class="catalog__author"><span class="catalog__author--name">Надежда</span><span class="catalog__author--time-post">(45
+                      часов назад)</span> </p>
+                  <p class="catalog__text">Всем GM и взаимные лайки</p>
+                  <div class="catalog__like-wrapper">
+                    <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
+                    <p class="catalog__like">Нравится: 2560</p>
+                  </div>
+                </div>
+              </li>
             </div>
-          </li>
-          <li class="catalog__tape">
-            <p class="catalog__review">
-              <img class="catalog__review-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-            </p>
-            <p class="catalog__author"><span class="catalog__author--name">Антон</span><span class="catalog__author--time-post">(12
-                часов назад)</span> </p>
-            <p class="catalog__text">Соседи будут рады!</p>
-            <div class="catalog__like-wrapper">
-              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
-              <p class="catalog__like">Нравится: 666</p>
-            </div>
-          </li>
-          <li class="catalog__tape">
-            <p class="catalog__review">
-              <img class="catalog__review-image" src="img/photo-window-mobile@1x.jpg" width="" height="" alt="фотография-пост">
-            </p>
-            <p class="catalog__author"><span class="catalog__author--name">Борис</span><span class="catalog__author--time-post">(20
-                часов назад)</span> </p>
-            <p class="catalog__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="catalog__like-wrapper">
-              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
-              <p class="catalog__like">Нравится: 215</p>
-            </div>
-          </li>
-          <li class="catalog__tape">
-            <p class="catalog__review">
-              <img class="catalog__review-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-            </p>
-            <p class="catalog__author"><span class="catalog__author--name">Сергей</span><span class="catalog__author--time-post">(25
-                часов назад)</span> </p>
-            <p class="catalog__text">Самая кубанская в мире!</p>
-            <div class="catalog__like-wrapper">
-              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
-              <p class="catalog__like">Нравится: 4</p>
-            </div>
-          </li>
-          <li class="catalog__tape">
-            <p class="catalog__review">
-              <img class="catalog__review-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-            </p>
-            <p class="catalog__author"><span class="catalog__author--name">Максим</span><span class="catalog__author--time-post">(40
-                часов назад)</span> </p>
-            <p class="catalog__text">Где снег-то?</p>
-            <div class="catalog__like-wrapper">
-              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
-              <p class="catalog__like">Нравится: 150</p>
-            </div>
-          </li>
-          <li class="catalog__tape">
-            <p class="catalog__review">
-              <img class="catalog__review-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-            </p>
-            <p class="catalog__author"><span class="catalog__author--name">Надежда</span><span class="catalog__author--time-post">(45
-                часов назад)</span> </p>
-            <p class="catalog__text">Всем GM и взаимные лайки</p>
-            <div class="catalog__like-wrapper">
-              <img class="catalog__heart" src="img/icon-heart.svg" width="14" height="12" alt=" лайк">
-              <p class="catalog__like">Нравится: 2560</p>
-            </div>
-          </li>
+          </div>
         </ul>
       </div>
       <!-- end .promo -->
     </section>
     <section class="post">
-      <form class="post__button" action="https://echo.htmlacademy.ru" method="post">
-        <div class="post__wrapper">
-          <h2 class="visually-hidden">Выкладываем свои фотографии</h2>
-          <p class="post__text">Затмите всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <img class="post__photo-image" src="img/photo-road-mobile@1x.jpg" width="280" height="180" alt="Личная фотка">
-          <div class="post__wrapper editor">
-            <div class="post__item">
-              <label class="post__label" for="cut-off-field">Обрезать</label>
-              <input class="post__input" type="checkbox" name="editor" value="cut-off" id="cut-off-field">
+      <div class="container">
+        <p class="post__text">Затмите всех!</p>
+        <p class="post__text post__text--additional">Выкладывайте все, что накопилось в телефоне!</p>
+        <form class="post__button" action="https://echo.htmlacademy.ru" method="post">
+          <div class="post__wrapper">
+            <h2 class="visually-hidden">Выкладываем свои фотографии</h2>
+            <img class="post__photo-image" src="img/photo-road-mobile@1x.jpg" width="280" height="180" alt="Личная фотка">
+            <img class="post__photo-road" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Личная фотка">
+            <img class="post__photo-winter" src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Личная фотка">
+            <div class="post__wrap">
+              <div class="post__wrapper-editor">
+                <div class="post__item">
+                  <label class="post__label" for="cut-off-field">Обрезать</label>
+                  <input class="post__input" type="checkbox" name="editor" value="cut-off" id="cut-off-field">
+                  <input class="post__range-editor" type="range" min="1" max="100" id="size" value="3">
+                </div>
+                <div class="post__item">
+                  <label class="post__label" for="color-field">Краска</label>
+                  <input class="post__input" type="checkbox" name="editor" value="color" id="color-field">
+                  <input class="post__range-editor" type="range" min="1" max="100" id="size" value="3">
+                </div>
+                <div class="post__item post__item--end">
+                  <label class="post__label" for="light-field">Свет</label>
+                  <input class="post__input" type="checkbox" name="editor" value="light" id="light-field">
+                  <input class="post__range-editor" type="range" min="1" max="100" id="size" value="3">
+                </div>
+              </div>
+              <input class="post__range" type="range" min="1" max="100" id="size" value="3">
+              <div class="post__wrapper-button">
+                <button class="post__toggle" type="submit">Запостить</button>
+                <button class="post__toggle" type="reset">Отмена</button>
+              </div>
             </div>
-            <div class="post__item">
-              <label class="post__label" for="color-field">Краска</label>
-              <input class="post__input" type="checkbox" name="editor" value="color" id="color-field">
-            </div>
-            <div class="post__item">
-              <label class="post__label" for="light-field">Свет</label>
-              <input class="post__input" type="checkbox" name="editor" value="light" id="light-field">
-            </div>
-
-            <input type="range" min="1" max="100" id="size" value="3">
           </div>
-          <div class="post__wrapper-button">
-            <button class="post__toggle" type="submit">Запостить</button>
-            <button class="post__toggle" type="reset">Отмена</button>
-          </div>
-        </div>
-        </div>
+      </div>
       </form>
+      </div>
       <!-- end .promo -->
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Пинк»">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a aria-label=">Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
-        </li>
-        <li class="social__item">
-          <a aria-label="Мы в Фейсбуке" class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
-        </li>
-        <li class="social__item">
-          <a aria-label="Мы в ютубе" class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
-      </a>
+    <div class="container">
+      <section class="page-footer__section">
+        <a class="page-footer__logo" href="">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a aria-label=">Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a aria-label="Мы в Фейсбуке" class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a aria-label="Мы в ютубе" class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
+          </a>
+        </div>
+      </section>
     </div>
   </footer>
 </body>
