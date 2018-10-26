@@ -20,9 +20,11 @@
   }
 }
 
+
 .site-list__item--active {
 border-bottom: 2px solid #ffffff;
 }
+
 
 @media (min-width: @desktop-width) {
   .main-nav__list {
@@ -35,9 +37,14 @@ border-bottom: 2px solid #ffffff;
     font-size: 18px;
     line-height: 18px;
     border: none;
+    padding: 0;
 
     &:active {
       color: #82888e;
     }
+  }
+  .site-list__item {
+ margin: 0 25px;
+ padding-bottom: 10px;
   }
 }
