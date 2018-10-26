@@ -16,30 +16,32 @@
   }
 
   .effection-block__image {
+margin: 0;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 240px 276px;
+    width: 240px;
+    height: 276px;
+    position: relative;
+  }
+
+  .effection-block__image::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    content: "24";
+    text-align: center;
     color: #d22856;
+    font-weight: bold;
     font-size: 96px;
     line-height: 149px;
     width: 174px;
     height: 174px;
     border: 14px solid #d22856;
     border-radius: 50%;
-    position: relative;
-  }
-
-  .effection-block__image::before {
-    display: block;
-    content: "";
-    background-image: url("../img/icon-timer.svg");
-    background-size: 240px 276px;
-    width: 240px;
-    height: 276px;
+    margin: 0;
     position: absolute;
-    left: -33px;
-    top: -70px;
-    z-index: -1;
+    bottom: 20px;
+    right: 20px;
   }
 
   .effection-block__title {
@@ -90,7 +92,6 @@
 
   .effection-block__wrapper {
     justify-content: flex-start;
-    height: 300px;
   }
 
   .effection-block__wrap {
@@ -103,16 +104,18 @@
   }
 
   .effection-block__image {
-    margin-left: 40px;
-    width: 200px;
-    height: 200px;
-  }
-
-  .effection-block__image::before {
     background-size: 300px 350px;
     width: 300px;
     height: 350px;
-    left: -53px;
-    top: -100px;
+  }
+
+  .effection-block__image::before {
+    font-size: 120px;
+    line-height: 186px;
+    width: 220px;
+    height: 220px;
+    bottom: 25px;
+    right: 25px;
+    border: 17px solid #d22856;
   }
 }

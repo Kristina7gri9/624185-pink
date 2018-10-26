@@ -21,6 +21,25 @@
   border: 2px solid #e5e5e5;
   padding: 20px;
   margin-bottom: -2px;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: 31px 21px;
+    width: 31px;
+    height: 21px;
+    position: absolute;
+left: 230px;
+  }
+  &--close::before {
+    background-image: url("../img/icon-no.svg");
+    background-size: 26px 25px;
+    width: 26px;
+    height: 25px;
+  }
 }
 
 .pricing-plans__block {
@@ -36,7 +55,26 @@
   text-align: center;
   margin: 0;
   padding: 19px 0;
+  position: relative;
 }
+
+
+  .pricing-plans__header--hit::before {
+display: block;
+content: "Хит";
+font-size: 14px;
+line-height: 30px;
+font-weight: 300;
+height: 0;
+width: 42px;
+border-bottom: 30px solid #d22856;
+border-left:30px solid transparent;
+border-right:30px solid transparent;
+transform: rotate(-45deg);
+position: absolute;
+top: 10px;
+  }
+
 
 .pricing-plans__addition {
   display: none;
@@ -61,13 +99,22 @@
     border: none;
     border-left: 2px solid #e5e5e5;
     border-top: 2px solid #e5e5e5;
-  }
 
-  .pricing-plans__description--active {
-    color: #000000;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: none;
+
+    &--active {
+      color: #000000;
+      font-size: 14px;
+      line-height: 30px;
+      text-transform: none;
+    }
+
+    &::before {
+      left: 60px;
+    }
+
+    &--active::before {
+      display: none;
+    }
   }
 
   .pricing-plans__header {
@@ -78,8 +125,14 @@
     &--none {
       background-color: transparent;
     }
-
   }
+    .pricing-plans__header--hit::before {
+      width: 26px;
+      left: -22px;
+      top: 5px;
+    }
+
+
 
   .pricing-plans__price {
     font-size: 18px;
@@ -102,6 +155,16 @@
 
   .pricing-plans__header {
     font-size: 18px;
+  }
+    .pricing-plans__header--hit::before {
+      width: 42px;
+    left: -25px;
+    top: 10px;
+    }
+
+
+  .pricing-plans__description::before {
+    left: 100px;
   }
 
   .pricing-plans__description--active {

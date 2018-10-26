@@ -11,6 +11,17 @@
   text-align: center;
   border-top: 2px solid #485461;
   border-bottom: 1px solid #000000;
+  &:hover{
+   color:#d22856;
+  }
+  &:active {
+    color: #d22856;
+  opacity: 0.3;
+  }
+}
+
+.site-list__item--active {
+border-bottom: 2px solid #ffffff;
 }
 
 @media (min-width: @desktop-width) {
@@ -24,5 +35,9 @@
     font-size: 18px;
     line-height: 18px;
     border: none;
+
+    &:active {
+      color: #82888e;
+    }
   }
 }
