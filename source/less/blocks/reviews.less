@@ -48,6 +48,7 @@
   .reviews__item {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   .reviews__text {
@@ -69,6 +70,31 @@
 
   .reviews__text {
     font-size: 18px;
+    width: 700px;
+position: relative;
+    &::before {
+      display: block;
+      content: "";
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-size: 22px 41px;
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      left: -130px;
+      top: 35px;
+    }
+    &::after {
+      display: block;
+      content: "";
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-size: 22px 41px;
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      right: -130px;
+      top: 35px;
+    }
+
   }
 
   .reviews__author-name {

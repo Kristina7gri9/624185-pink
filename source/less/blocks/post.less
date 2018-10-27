@@ -25,8 +25,8 @@
 }
 
 .post__range {
-  padding: 20px 60px;
-
+ width: 250px;
+margin-bottom: 20px;
 }
 
 .post__photo-road {
@@ -133,7 +133,33 @@
     display: block;
     width: 204px;
   }
+.post__range-editor--cut::before {
+display: block;
+content: "";
+background-image: url("../img/icon-editor-crop.svg");
+background-size: 22px 22px;
+width: 22px;
+height: 22px;
+margin-right: 10px;
+}
 
+.post__range-editor--color::before {
+  display: block;
+  content: "";
+  background-image: url("../img/icon-editor-fill.svg");
+  background-size: 22px 22px;
+  width: 22px;
+  height: 22px;
+  }
+
+  .post__range-editor--light::before {
+    display: block;
+    content: "";
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+    }
   .post__item {
     display: flex;
     flex-wrap: wrap;
@@ -177,6 +203,11 @@
 
   .post__item {
     width: 410px;
+    border-bottom: 1px solid #dddfe0;
+
+    &--second {
+      border: none;
+    }
   }
 
   .post__photo-winter {

@@ -1,7 +1,6 @@
 .catalog {
   color: #000000;
   background-color: #ffffff;
-  padding: 0 20px;
 }
 
 .catalog__author {
@@ -38,6 +37,22 @@
 .catalog__tape--panorama {
   background-color: #ffffff;
   margin-bottom: 40px;
+
+  &::before {
+    display: block;
+    content: "Панорама дня";
+    width: 140px;
+    color: #ffffff;
+font-size: 12px;
+line-height: 24px;
+font-weight: bold;
+background-color: #d32958;
+padding: 6px 0;
+text-align: center;
+position: absolute;
+right: 20px;
+text-transform: uppercase;
+  }
 }
 
 .catalog__info {
@@ -96,6 +111,7 @@
 .catalog__review-image--panorama {
   width: 100%;
   height: 137px;
+padding: 0;
 }
 
 .catalog__image {
@@ -194,5 +210,9 @@
 
   .catalog__title {
     font-size: 18px;
+  }
+
+  .catalog__tape--panorama::before {
+right: 130px;
   }
 }
