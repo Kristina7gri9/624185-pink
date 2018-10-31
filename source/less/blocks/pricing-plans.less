@@ -1,7 +1,7 @@
 .pricing-plans {
   display: block;
   background-color: #f2f2f2;
-  padding-top: 100px;
+  padding-top: 87px;
   background-image: url("../img/bg-triangle-white.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -25,7 +25,9 @@
   font-size: 14px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
-  padding: 20px;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 18px;
   margin-bottom: -2px;
   position: relative;
 
@@ -38,7 +40,8 @@
     width: 31px;
     height: 21px;
     position: absolute;
-    left: 230px;
+    left: 248px;
+    top: 20px;
   }
 
   &--close::before {
@@ -46,11 +49,15 @@
     background-size: 26px 25px;
     width: 26px;
     height: 25px;
+    left: 250px;
+    top: 10px;
   }
 }
 
 .pricing-plans__block {
   text-transform: uppercase;
+  width: 320px;
+  flex-shrink: 0;
 }
 
 .pricing-plans__header {
@@ -61,7 +68,7 @@
   color: #ffffff;
   text-align: center;
   margin: 0;
-  padding: 19px 0;
+  padding: 17px 0;
   position: relative;
 }
 
@@ -85,6 +92,10 @@
 
 .pricing-plans__addition {
   display: none;
+}
+
+.pricing-plans__container {
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
