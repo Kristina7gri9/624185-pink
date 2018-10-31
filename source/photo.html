@@ -20,10 +20,10 @@
         <nav class="page-header__menu main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a class="site-list__title" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a class="site-list__title">Фотографии</a>
               </li>
               <li class="site-list__item">
@@ -193,25 +193,33 @@
             <div class="post__wrap">
               <div class="post__wrapper-editor">
                 <div class="post__item">
-                  <label class="post__label" for="cut-off-field">Обрезать</label>
-                  <input class="post__input" type="checkbox" name="editor" value="cut-off" id="cut-off-field">
-                  <input class="post__range-editor" type="range" min="1" max="100" id="size" value="3">
+                  <label class="post__label" for="cut-off-field">
+                  <span class="post__cut">Обрезать</span></label>
+                  <div class="post__range post__range--cut">
+                    <div class="post__circle"></div>
+                  </div>
                 </div>
-                <div class="post__item">
-                  <label class="post__label" for="color-field">Краска</label>
-                  <input class="post__input" type="checkbox" name="editor" value="color" id="color-field">
-                  <input class="post__range-editor" type="range" min="1" max="100" id="size" value="3">
+                <div class="post__item post__item--second">
+                  <label class="post__label" for="color-field">
+                  <span class="post__color"> Краска</span></label>
+                  <div class="post__range post__range--color">
+                      <div class="post__circle"></div>
+                    </div>
                 </div>
                 <div class="post__item post__item--end">
-                  <label class="post__label" for="light-field">Свет</label>
-                  <input class="post__input" type="checkbox" name="editor" value="light" id="light-field">
-                  <input class="post__range-editor" type="range" min="1" max="100" id="size" value="3">
+                  <label class="post__label" for="light-field">
+                  <span class="post__light"> Свет</span></label>
+                  <div class="post__range post__range--light">
+                      <div class="post__circle"></div>
+                    </div>
                 </div>
               </div>
-              <input class="post__range" type="range" min="1" max="100" id="size" value="3">
+              <div class="post__range post__range--none">
+                <div class="post__circle"></div>
+              </div>
               <div class="post__wrapper-button">
                 <button class="post__toggle" type="submit">Запостить</button>
-                <button class="post__toggle" type="reset">Отмена</button>
+                <button class="post__toggle post__toggle--cancellation" type="reset">Отмена</button>
               </div>
             </div>
           </div>
