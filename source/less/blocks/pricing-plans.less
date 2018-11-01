@@ -28,9 +28,9 @@
   padding-left: 23px;
   padding-top: 12px;
   padding-bottom: 20px;
-  margin-bottom: -2px;
   position: relative;
   background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 
   &::before {
     display: block;
@@ -61,7 +61,7 @@
   margin: auto;
   flex-shrink: 0;
   box-sizing: border-box;
-  margin-right: -2px;
+border-bottom: 1px solid #e5e5e5;
 }
 
 .pricing-plans__header {
@@ -74,6 +74,8 @@
   margin: 0;
   padding: 16px 0;
   position: relative;
+  margin-right: 1px;
+  margin-left: 1px;
 }
 
 
@@ -119,12 +121,22 @@
 
   .pricing-plans__addition {
     display: block;
+   }
+
+   .pricing-plans__block {
+
+    &:first-child .pricing-plans__list {
+      border-top: 1px solid #e5e5e5;
+      border-left: 1px solid #e5e5e5;
+    }
+    &:last-child .pricing-plans__list {
+      border-right: 1px solid #e5e5e5;
+    }
   }
 
   .pricing-plans__description {
     font-size: 0;
     background-color: #ffffff;
-    border: none;
 
 
     &--active {
