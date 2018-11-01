@@ -58,8 +58,8 @@
 
 .pricing-plans__block {
   text-transform: uppercase;
- width: 280px;
- margin: auto;
+  width: 280px;
+  margin: auto;
   flex-shrink: 0;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
@@ -153,6 +153,7 @@
     line-height: 30px;
 
     &--none {
+      display: none;
       background-color: transparent;
     }
   }
@@ -198,11 +199,12 @@
   .pricing-plans__header--hit::before {
     width: 42px;
     left: -25px;
-    top: 10px;
+    top: 11px;
   }
-.pricing-plans__block {
-  width: 230px;
-}
+
+  .pricing-plans__block {
+    width: 230px;
+  }
 
   .pricing-plans__description::before {
     left: 100px;
