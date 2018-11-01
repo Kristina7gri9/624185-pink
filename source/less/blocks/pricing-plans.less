@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .pricing-plans__list {
@@ -24,12 +25,13 @@
   color: #000000;
   font-size: 14px;
   line-height: 30px;
-  border: 2px solid #e5e5e5;
-  padding-left: 42px;
+  border-bottom: 2px solid #e5e5e5;
+  padding-left: 23px;
   padding-top: 12px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   margin-bottom: -2px;
   position: relative;
+  background-color: #ffffff;
 
   &::before {
     display: block;
@@ -40,7 +42,7 @@
     width: 31px;
     height: 21px;
     position: absolute;
-    left: 248px;
+    left: 230px;
     top: 20px;
   }
 
@@ -49,15 +51,19 @@
     background-size: 26px 25px;
     width: 26px;
     height: 25px;
-    left: 250px;
-    top: 10px;
+    left: 232px;
+    top: 13px;
   }
 }
 
 .pricing-plans__block {
   text-transform: uppercase;
-  width: 320px;
+ width: 280px;
+ margin: auto;
   flex-shrink: 0;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  margin-right: -2px;
 }
 
 .pricing-plans__header {
@@ -68,7 +74,7 @@
   color: #ffffff;
   text-align: center;
   margin: 0;
-  padding: 17px 0;
+  padding: 16px 0;
   position: relative;
 }
 
@@ -87,6 +93,7 @@
   transform: rotate(-45deg);
   position: absolute;
   top: 10px;
+  left: -26px;
 }
 
 
@@ -96,15 +103,20 @@
 
 .pricing-plans__container {
   display: flex;
+  width: 280px;
+  margin: auto;
+  transform: translateX(-280px);
 }
 
 @media (min-width: @tablet-width) {
   .pricing-plans__container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     padding: 20px 0;
+    width: auto;
+    transform: none;
+    margin: 0;
   }
 
   .pricing-plans__addition {
@@ -136,7 +148,7 @@
   }
 
   .pricing-plans__header {
-    padding: 15px 40px;
+    padding: 20px 20px;
     font-size: 16px;
     line-height: 30px;
 
@@ -152,10 +164,16 @@
   }
 
 
-
   .pricing-plans__price {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .pricing-plans__block {
+    flex-shrink: initial;
+    margin: 0;
+    border: none;
+    width: 160px;
   }
 
   .pricing-plans__block--column {
@@ -166,6 +184,7 @@
 @media (min-width: @desktop-width) {
   .pricing-plans__container {
     padding: 90px 0;
+    justify-content: flex-start;
   }
 
   .pricing-plans__price {
@@ -181,18 +200,24 @@
     left: -25px;
     top: 10px;
   }
-
+.pricing-plans__block {
+  width: 230px;
+}
 
   .pricing-plans__description::before {
     left: 100px;
   }
 
+  .pricing-plans__description {
+    padding: 20px 50px;
+  }
+
   .pricing-plans__description--active {
     font-size: 18px;
-    padding: 20px 47px;
+    padding: 20px 30px;
   }
 
   .pricing-plans__header {
-    padding: 20px 68px;
+    padding: 20px 20px;
   }
 }
