@@ -11,30 +11,36 @@
 <body>
   <header class="page-header page-header--opened">
     <!-- page-header--closed модификатор для закрытого состояния меню-->
-      <div class="page-header__container">
-        <div class="page-header__wrapper">
-          <a class="page-header__logo-image" href="index.html" ></a>
-          <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-        </div>
-        <nav class="page-header__menu main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__title" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__title">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__title" href="competition.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <div class="page-header__container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo-image">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo-pink">
+          </picture>
+        </a>
+        <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       </div>
+      <nav class="page-header__menu main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__title" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__title">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__title" href="competition.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="promo promo--photo">
@@ -50,12 +56,16 @@
         <ul class="catalog__list">
           <li class="catalog__tape catalog__tape--panorama">
             <a class="catalog__review" href="#">
-              <img class="catalog__review-image catalog__review-image--panorama" src="img/panorama-mobile@1x.jpg" width="320"
-                height="137" alt="фотография-пост">
-              <img class="catalog__image catalog__image--panorama" src="img/panorama-tablet@1x.jpg" width="660" height="510"
-                alt="фотография-пост">
-              <img class="catalog__image-post catalog__panorama" src="img/panorama-desktop@1x.jpg" width="1200" height="506"
-                alt="фотография-пост">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@2x.jpg 2x">
+                <img class="catalog__review-image catalog__review-image--panorama" src="img/panorama-mobile@1x.jpg"
+                  srcset="img/panorama-mobile@1x.jpg 2x" width="320" height="137" alt="фотография-пост">
+                <img class="catalog__image catalog__image--panorama" src="img/panorama-tablet@1x.jpg" width="660"
+                  height="510" alt="фотография-пост">
+                <img class="catalog__image-post catalog__panorama" src="img/panorama-desktop@1x.jpg" width="1200"
+                  height="506" alt="фотография-пост">
+              </picture>
             </a>
             <div class="container">
               <div class="catalog__info">
@@ -78,9 +88,14 @@
             <div class="catalog__flex">
               <li class="catalog__tape">
                 <a class="catalog__review" href="#">
-                  <img class="catalog__review-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-                  <img class="catalog__image" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
-                  <img class="catalog__image-post" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@2x.jpg 2x">
+                    <img class="catalog__review-image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                      width="280" height="180" alt="фотография-пост">
+                    <img class="catalog__image" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                    <img class="catalog__image-post" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  </picture>
                 </a>
                 <div class="catalog__info-text">
                   <p class="catalog__author"><span class="catalog__author--name">Левон</span><span class="catalog__author--time-post">(5
@@ -94,9 +109,15 @@
               </li>
               <li class="catalog__tape">
                 <a class="catalog__review" href="#">
-                  <img class="catalog__review-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-                  <img class="catalog__image" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
-                  <img class="catalog__image-post" src="img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="catalog__review-image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x"
+                      width="280" height="180" alt="фотография-пост">
+                    <img class="catalog__image" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                    <img class="catalog__image-post" src="img/photo-drumset-desktop@1x.jpg" width="300" height="400"
+                      alt="фотография-пост">
+                  </picture>
                 </a>
                 <div class="catalog__info-text">
                   <p class="catalog__author"><span class="catalog__author--name">Антон</span><span class="catalog__author--time-post">(12
@@ -110,9 +131,14 @@
               </li>
               <li class="catalog__tape">
                 <a class="catalog__review" href="#">
-                  <img class="catalog__review-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-                  <img class="catalog__image" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
-                  <img class="catalog__image-post" src="img/photo-window-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@2x.jpg 2x">
+                    <img class="catalog__review-image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"
+                      width="280" height="180" alt="фотография-пост">
+                    <img class="catalog__image" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                    <img class="catalog__image-post" src="img/photo-window-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  </picture>
                 </a>
                 <div class="catalog__info-text">
                   <p class="catalog__author"><span class="catalog__author--name">Борис</span><span class="catalog__author--time-post">(20
@@ -126,9 +152,14 @@
               </li>
               <li class="catalog__tape">
                 <a class="catalog__review" href="#">
-                  <img class="catalog__review-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-                  <img class="catalog__image" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
-                  <img class="catalog__image-post" src="img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="catalog__review-image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                      width="280" height="180" alt="фотография-пост">
+                    <img class="catalog__image" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                    <img class="catalog__image-post" src="img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  </picture>
                 </a>
                 <div class="catalog__info-text">
                   <p class="catalog__author"><span class="catalog__author--name">Сергей</span><span class="catalog__author--time-post">(25
@@ -142,9 +173,14 @@
               </li>
               <li class="catalog__tape">
                 <a class="catalog__review" href="#">
-                  <img class="catalog__review-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-                  <img class="catalog__image" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
-                  <img class="catalog__image-post" src="img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@2x.jpg 2x">
+                    <img class="catalog__review-image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                      width="280" height="180" alt="фотография-пост">
+                    <img class="catalog__image" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                    <img class="catalog__image-post" src="img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  </picture>
                 </a>
                 <div class="catalog__info-text">
                   <p class="catalog__author"><span class="catalog__author--name">Максим</span><span class="catalog__author--time-post">(40
@@ -158,9 +194,14 @@
               </li>
               <li class="catalog__tape">
                 <a class="catalog__review" href="#">
-                  <img class="catalog__review-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фотография-пост">
-                  <img class="catalog__image" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
-                  <img class="catalog__image-post" src="img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@2x.jpg 2x">
+                    <img class="catalog__review-image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+                      width="280" height="180" alt="фотография-пост">
+                    <img class="catalog__image" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="фотография-пост">
+                    <img class="catalog__image-post" src="img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="фотография-пост">
+                  </picture>
                 </a>
                 <div class="catalog__info-text">
                   <p class="catalog__author"><span class="catalog__author--name">Надежда</span><span class="catalog__author--time-post">(45
@@ -185,31 +226,36 @@
         <form class="post__button" action="https://echo.htmlacademy.ru" method="post">
           <div class="post__wrapper">
             <h2 class="visually-hidden">Выкладываем свои фотографии</h2>
-            <img class="post__photo-image" src="img/photo-road-mobile@1x.jpg" width="280" height="180" alt="Личная фотка">
-            <img class="post__photo-road" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Личная фотка">
-            <img class="post__photo-winter" src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Личная фотка">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@2x.jpg 2x">
+              <img class="post__photo-image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+                width="280" height="180" alt="Личная фотка">
+              <img class="post__photo-road" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Личная фотка">
+              <img class="post__photo-winter" src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Личная фотка">
+            </picture>
             <div class="post__wrap">
               <div class="post__wrapper-editor">
                 <div class="post__item">
                   <label class="post__label" for="cut-off-field">
-                  <span class="post__cut">Обрезать</span></label>
+                    <span class="post__cut">Обрезать</span></label>
                   <div class="post__range post__range--cut">
                     <div class="post__circle"></div>
                   </div>
                 </div>
                 <div class="post__item post__item--second">
                   <label class="post__label" for="color-field">
-                  <span class="post__color"> Краска</span></label>
+                    <span class="post__color"> Краска</span></label>
                   <div class="post__range post__range--color">
-                      <div class="post__circle"></div>
-                    </div>
+                    <div class="post__circle"></div>
+                  </div>
                 </div>
                 <div class="post__item post__item--end">
                   <label class="post__label" for="light-field">
-                  <span class="post__light"> Свет</span></label>
+                    <span class="post__light"> Свет</span></label>
                   <div class="post__range post__range--light">
-                      <div class="post__circle"></div>
-                    </div>
+                    <div class="post__circle"></div>
+                  </div>
                 </div>
               </div>
               <div class="post__range post__range--none">
@@ -227,16 +273,19 @@
       <!-- end .promo -->
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--index">
     <div class="container">
       <section class="page-footer__section">
-        <a class="page-footer__logo" href="">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
+        <a class="page-footer__logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
+          </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a aria-label=">Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
+              <a aria-label="Мы в твитере" class="social__link social__link--twiter" href="https://vk.com/htmlacademy"></a>
             </li>
             <li class="social__item">
               <a aria-label="Мы в Фейсбуке" class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
@@ -249,7 +298,9 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
+            <picture>
+              <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
+            </picture>
           </a>
         </div>
       </section>

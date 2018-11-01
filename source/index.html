@@ -13,7 +13,13 @@
     <!-- page-header--closed модификатор для закрытого состояния меню-->
       <div class="page-header__container">
         <div class="page-header__wrapper">
-          <a class="page-header__logo-image"></a>
+          <a class="page-header__logo-image">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo-pink">
+            </picture>
+          </a>
           <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
         <nav class="page-header__menu main-nav">
@@ -225,8 +231,11 @@
   <footer class="page-footer page-footer--index">
     <div class="container">
       <section class="page-footer__section">
-        <a class="page-footer__logo" href="">
+        <a class="page-footer__logo" href="#">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
           <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Пинк»">
+        </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -244,7 +253,9 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+            <picture>
             <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademylogo">
+          </picture>
           </a>
         </div>
       </section>
