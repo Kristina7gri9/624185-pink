@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .pricing-plans__list {
@@ -24,12 +25,12 @@
   color: #000000;
   font-size: 14px;
   line-height: 30px;
-  border: 2px solid #e5e5e5;
-  padding-left: 42px;
+  padding-left: 23px;
   padding-top: 12px;
-  padding-bottom: 18px;
-  margin-bottom: -2px;
+  padding-bottom: 20px;
   position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 
   &::before {
     display: block;
@@ -40,7 +41,7 @@
     width: 31px;
     height: 21px;
     position: absolute;
-    left: 248px;
+    left: 230px;
     top: 20px;
   }
 
@@ -49,15 +50,18 @@
     background-size: 26px 25px;
     width: 26px;
     height: 25px;
-    left: 250px;
-    top: 10px;
+    left: 232px;
+    top: 13px;
   }
 }
 
 .pricing-plans__block {
   text-transform: uppercase;
-  width: 320px;
+  width: 280px;
+  margin: auto;
   flex-shrink: 0;
+  box-sizing: border-box;
+border-bottom: 1px solid #e5e5e5;
 }
 
 .pricing-plans__header {
@@ -68,8 +72,10 @@
   color: #ffffff;
   text-align: center;
   margin: 0;
-  padding: 17px 0;
+  padding: 16px 0;
   position: relative;
+  margin-right: 1px;
+  margin-left: 1px;
 }
 
 
@@ -87,6 +93,7 @@
   transform: rotate(-45deg);
   position: absolute;
   top: 10px;
+  left: -26px;
 }
 
 
@@ -96,27 +103,40 @@
 
 .pricing-plans__container {
   display: flex;
+  width: 280px;
+  margin: auto;
+  transform: translateX(-280px);
 }
 
 @media (min-width: @tablet-width) {
   .pricing-plans__container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     padding: 20px 0;
+    width: auto;
+    transform: none;
+    margin: 0;
   }
 
   .pricing-plans__addition {
     display: block;
+   }
+
+   .pricing-plans__block {
+
+    &:first-child .pricing-plans__list {
+      border-top: 1px solid #e5e5e5;
+      border-left: 1px solid #e5e5e5;
+    }
+    &:last-child .pricing-plans__list {
+      border-right: 1px solid #e5e5e5;
+    }
   }
 
   .pricing-plans__description {
     font-size: 0;
     background-color: #ffffff;
-    border: none;
-    border-left: 2px solid #e5e5e5;
-    border-top: 2px solid #e5e5e5;
 
 
     &--active {
@@ -136,11 +156,12 @@
   }
 
   .pricing-plans__header {
-    padding: 15px 40px;
+    padding: 20px 20px;
     font-size: 16px;
     line-height: 30px;
 
     &--none {
+      display: none;
       background-color: transparent;
     }
   }
@@ -152,20 +173,23 @@
   }
 
 
-
   .pricing-plans__price {
     font-size: 18px;
     line-height: 30px;
   }
 
-  .pricing-plans__block--column {
-    border-right: 2px solid #e5e5e5;
+  .pricing-plans__block {
+    flex-shrink: initial;
+    margin: 0;
+    border: none;
+    width: 160px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .pricing-plans__container {
     padding: 90px 0;
+    justify-content: flex-start;
   }
 
   .pricing-plans__price {
@@ -179,20 +203,27 @@
   .pricing-plans__header--hit::before {
     width: 42px;
     left: -25px;
-    top: 10px;
+    top: 11px;
   }
 
+  .pricing-plans__block {
+    width: 235px;
+  }
 
   .pricing-plans__description::before {
     left: 100px;
   }
 
+  .pricing-plans__description {
+    padding: 20px 50px;
+  }
+
   .pricing-plans__description--active {
     font-size: 18px;
-    padding: 20px 47px;
+    padding: 20px 30px;
   }
 
   .pricing-plans__header {
-    padding: 20px 68px;
+    padding: 20px 20px;
   }
 }
